@@ -1,9 +1,14 @@
-import { Button } from "@/components/ui/button"
+
+import Hero from "@/components/custom/large/Hero"
+import Menu from "@/components/custom/large/Menu"
+
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
+    <div className="w-full bg-primary">
+      <Hero/>
+      <Menu/> 
+      
     </div>
   )
 }
