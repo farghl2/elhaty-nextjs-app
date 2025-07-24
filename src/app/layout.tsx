@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { Plus_Jakarta_Sans } from "next/font/google";
+
 import { Cairo } from "next/font/google";
 import Header from "@/components/custom/atoms/Header";
 import WhatsAppBtn from "@/components/custom/atoms/WhatsAppBtn";
 
-export const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-jakarta",
-  display: "swap",
-});
-
-export const cairo = Cairo({
+const cairo = Cairo({
   subsets: ["arabic"],
   variable: "--font-cairo",
   display: "swap",
@@ -33,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="ar" >
       <body
-        className={`${cairo.variable} ${jakarta.variable} antialiased`}
+        className={`${cairo.variable}  antialiased`}
       >
         <div className="flex flex-col">
         <Header />

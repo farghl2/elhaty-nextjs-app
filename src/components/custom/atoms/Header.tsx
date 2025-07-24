@@ -31,7 +31,7 @@ const Header = () => {
             key={index} className={`px-16 text-white font-bold text-xl`}  variant={'link'}>
               <Link href={item.link} className="flex items-center gap-2">
               
-              {item.icon && <item.icon className="size-6"/>}
+              {/* {item.icon && <item.icon className="size-6"/>} */}
               {item.title}
               </Link>
             </Button>
