@@ -71,15 +71,15 @@ const Menu = () => {
         alt={item.desc}
         src={item.images}
         width={350}
-        height={350}
+        height={250}
         />
         <CardContent>
 <h4 className="text-lg sm:text-xl font-semibold">{item.title}</h4>
 <h5 className="text-lg sm:text-xl font-bold">{item.price}EGP</h5>
-
+<p className="mb-4 text-muted-foreground text-sm">بطاطس - ونص فراخ -وعيش</p>
 
         </CardContent>
-        <Button className="mx-3 mb-4">اضف للسلة <ShoppingCart /></Button>
+        {/* <Button className="mx-3 mb-4">اضف للسلة <ShoppingCart /></Button> */}
       </Card>)}
     </div>
    </section>

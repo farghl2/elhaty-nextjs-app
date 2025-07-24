@@ -10,7 +10,7 @@ import { ShoppingCart } from "lucide-react";
 const HEADERDATA = [
   { title: "الرئيسية", link: "/" ,icon:''},
   { title: "المنيو", link: "/#menu",icon:'' },
-  { title: "السلة", link: "#", icon:ShoppingCart },
+  // { title: "السلة", link: "#", icon:ShoppingCart },
 ];
 
 

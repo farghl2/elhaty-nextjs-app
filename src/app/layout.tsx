@@ -4,6 +4,7 @@ import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { Cairo } from "next/font/google";
 import Header from "@/components/custom/atoms/Header";
+import WhatsAppBtn from "@/components/custom/atoms/WhatsAppBtn";
 
 export const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
       >
         <div className="flex flex-col">
         <Header />
+        <WhatsAppBtn phoneNumber={1122882154}/>
         {children}
         </div>
       </body>
