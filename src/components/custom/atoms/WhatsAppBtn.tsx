@@ -15,7 +15,7 @@ const WhatsAppBtn = ({phoneNumber}:WhatsAppBtnProps) => {
       >
         <FaWhatsapp size={30} color="#fff" />
       </a>
-      <div className="mt-[8px] text-sm text-center font-bold text-black dark:text-white">كلمنا دلوقتي</div> 
+      <div className="mt-[8px] text-sm text-center font-bold text-black dark:text-white"> اطلب الان</div> 
     </div>
   );
 };

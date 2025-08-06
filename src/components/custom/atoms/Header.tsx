@@ -5,12 +5,12 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
 import SocialCards from "./SocialCards";
-import { ShoppingCart } from "lucide-react";
+import { Grid, Home, LocateFixedIcon, Menu } from "lucide-react";
 
 const HEADERDATA = [
-  { title: "الرئيسية", link: "/" ,icon:''},
-  { title: "المنيو", link: "/#menu",icon:'' },
-  // { title: "السلة", link: "#", icon:ShoppingCart },
+  { title: "الرئيسية", link: "/" ,icon:Home},
+  { title: "المنيو", link: "/#menu",icon:Grid },
+  { title: "موقعنا", link: "https://maps.app.goo.gl/eV57Y5aP2kSYqmjBA", icon:LocateFixedIcon },
 ];
 
 
@@ -18,7 +18,7 @@ const Header = () => {
 
 
   return (
-    <section className={`z-40 h-[60px] fixed w-full bg-transparent flex items-center}
+    <section className={`bg-primary z-40 h-[60px] fixed w-full flex items-center}
     `}>
       <div className="w-11/12 max-w-6xl mx-auto flex flex-row-reverse items-center justify-between">
        
@@ -31,16 +31,69 @@ const Header = () => {
             key={index} className={`px-16 text-white font-bold text-xl`}  variant={'link'}>
               <Link href={item.link} className="flex items-center gap-2">
               
-              {/* {item.icon && <item.icon className="size-6"/>} */}
+              {/* {item.icon && <item.icon className="size-5"/>} */}
               {item.title}
               </Link>
             </Button>
           ))}
         </nav>
+        <div className="hidden sm:block">
         <SocialCards />
+        </div>
+        <div className="block sm:hidden">
+          <PhoneNavBar />
+        </div>
       </div>
     </section>
   );
 };
 
 export default Header;
+
+
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+const PhoneNavBar =()=>{
+
+  return(
+   <Sheet>
+      <SheetTrigger>
+        <Menu className="text-accent w-6 h-6" />
+      </SheetTrigger>
+
+      <SheetContent side="left" className="w-[250px] sm:w-[300px]">
+        <SheetHeader>
+          <SheetTitle className="h-8"></SheetTitle>
+          <SheetDescription className="text-center space-y-2">
+            <ul className="space-y-2 mb-4">
+              {HEADERDATA.map((item) => (
+                <li key={item.link}>
+                  <SheetClose asChild>
+                    <Link
+                      href={item.link}
+                      className="py-3 px-4 flex items-center justify-between rounded hover:bg-muted transition"
+                    >
+                      <span>{item.title}</span>
+                      <item.icon className="w-5 h-5 text-muted-foreground" />
+                    </Link>
+                  </SheetClose>
+                  <div className="h-0.5 bg-muted-foreground" />
+                </li>
+              ))}
+            </ul>
+            <SocialCards />
+          </SheetDescription>
+        </SheetHeader>
+      </SheetContent>
+    </Sheet>
+  )
+
+}

@@ -21,19 +21,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  
 }: Readonly<{
   children: React.ReactNode;
+
 }>) {
+
+  
   return (
     <html lang="ar" >
       <body
         className={`${cairo.variable}  antialiased`}
       >
-        <div className="flex flex-col">
-        <Header />
-        <WhatsAppBtn phoneNumber={1122882154}/>
+       
+        
         {children}
-        </div>
+
       </body>
     </html>
   );

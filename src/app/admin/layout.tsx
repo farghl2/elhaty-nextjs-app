@@ -1,8 +1,15 @@
-import React from 'react'
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { AppSidebar } from "./AppSidebar"
 
-const AdminLayout = () => {
+const AdminLayout = ({children}:{children: React.ReactNode}) => {
   return (
-    <div>AdminLayout</div>
+      <SidebarProvider >
+      <AppSidebar />
+      <main className="w-full rtl">
+        <SidebarTrigger/>
+        {children}
+      </main>
+    </SidebarProvider>
   )
 }
 

@@ -1,9 +1,8 @@
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const Admin = () => {
-  return (
-    <div>Admin</div>
-  )
+  redirect('admin/menu')
 }
 
 export default Admin
