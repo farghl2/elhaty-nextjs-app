@@ -1,5 +1,7 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "./AppSidebar"
+import { Toaster } from "@/components/ui/sonner"
+
 
 const AdminLayout = ({children}:{children: React.ReactNode}) => {
   return (
@@ -8,6 +10,7 @@ const AdminLayout = ({children}:{children: React.ReactNode}) => {
       <main className="w-full rtl">
         <SidebarTrigger/>
         {children}
+        <Toaster />
       </main>
     </SidebarProvider>
   )

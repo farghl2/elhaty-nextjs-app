@@ -1,86 +1,69 @@
+import { Badge } from "@/components/ui/badge"
+import { ProductCard } from "../atoms/ProductCard"
+import { Plate, ServiceType } from "@/lib/types"
+import CustomSectionTitle from "../atoms/CustomSectionTitle"
 
-const menuData =[
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
+
+
+const menuData:Plate[] =[
+  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
+    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
+    sizes:[
+      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
+      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
+      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
+  ]
   },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
+  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
+    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
+    sizes:[
+      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
+      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
+      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
+  ]
   },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
+  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
+    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
+    sizes:[
+      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
+      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
+      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
+  ]
   },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
+  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
+    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
+    sizes:[
+      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
+      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
+      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
+  ]
   },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
+  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة نص فرخ نص فرخ',
+    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
+    sizes:[
+      // {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
+      // {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
+      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
+  ]
   },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
+  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة نص فرخ نص فرخ',
+    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
+    sizes:[
+      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
+      // {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
+      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
+  ]
   },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  
+ 
+ 
 ]
 const Menu = () => {
   return (
    <section id="menu" className=" mx-auto">
-    <MenuTitle />
+   <CustomSectionTitle title="قائمة الطعام"/>
     <Catigories />
-    <div className="flex items-center flex-wrap justify-center  gap-1 mb-8">
-      {menuData.map((item,index)=><Card
-      className="p-0  rounded-lg text-center"
-      key={index}
-      >
-        <Image
-        className="rounded-lg object-cover p-0 m-0"
-        alt={item.desc}
-        src={item.images}
-        width={350}
-        height={250}
-        />
-        <CardContent>
-<h4 className="text-lg sm:text-xl font-semibold">{item.title}</h4>
-<h5 className="text-lg sm:text-xl font-bold">{item.price}EGP</h5>
-<p className="mb-4 text-muted-foreground text-sm">{item.desc}</p>
-
-        </CardContent>
-        {/* <Button className="mx-3 mb-4">اضف للسلة <ShoppingCart /></Button> */}
-      </Card>)}
+    <div className="flex items-center flex-wrap justify-center  gap-1 mb-8 px-1">
+      {menuData.map((item,index)=><ProductCard plate={item} key={index}/>)}
     </div>
    </section>
   )
@@ -90,10 +73,8 @@ export default Menu
 
 
 
-import { Badge } from "@/components/ui/badge"
 
-import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
+
 
 
 
@@ -122,9 +103,3 @@ const Catigories = () => {
 }
 
 
-const MenuTitle=()=>(
-    <h2 
-    className="text-center text-yellow-700 my-4 text-2xl sm:text-3xl font-bold
-    "
-    >اكتشف المنيو بتاعنا</h2>
-)

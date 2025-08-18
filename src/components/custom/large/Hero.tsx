@@ -8,7 +8,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 
- const TITEL ='من مطبخنا لحد بابك… جودة، طعم، وراحة بالك!'
+ const TITEL ='لحمة بلدى %100'
 const Hero = () => {
     const ArrowDownMotion = motion(ArrowDown);
 

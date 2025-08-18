@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import TolTip from '@/components/custom/atoms/ToolTip'
 import Catigories from './Catigories'
+import AddPlateDialog from './AddPlate'
 
 
 
@@ -70,9 +71,7 @@ const Menu = () => {
     <section className='w-full  mx-auto px-4'>
       <div className='flex items-center justify-between'>
 
-      <Button >
-        إضافة صنف <Plus />
-      </Button>
+        <AddPlateDialog />
       <Catigories />
       </div>
       <div className='h-0.5 my-8 w-full bg-muted-foreground'/>

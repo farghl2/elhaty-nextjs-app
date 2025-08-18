@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -14,21 +13,42 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Category {
-  id        Int     @id @default(autoincrement())
-  name      String
-  plates    Plate[]
-}
-
 model Plate {
-  id          Int     @id @default(autoincrement())
+  id          Int         @id @default(autoincrement())
   title       String
-  price       Float
   desc        String
   imageUrl    String
-  offer       Float?   
-  status      Boolean 
+  status      Boolean
   bestSale    Boolean
-  category    Category @relation(fields: [categoryId], references: [id])
+  category    Category    @relation(fields: [categoryId], references: [id])
   categoryId  Int
+  sizes       PlateSize[]
+}
+
+model PlateSize {
+  id       Int     @id @default(autoincrement())
+  size     String
+  plate    Plate   @relation(fields: [plateId], references: [id])
+  plateId  Int
+  prices   PlateSizePrice[]
+}
+
+model PlateSizePrice {
+  id          Int     @id @default(autoincrement())
+  type        ServiceType
+  price       Float
+  offer       Float?
+  plateSize   PlateSize @relation(fields: [plateSizeId], references: [id])
+  plateSizeId Int
+}
+
+model Category {
+  id     Int     @id @default(autoincrement())
+  name   String
+  plates Plate[]
+}
+
+enum ServiceType {
+  TAKEAWAY
+  DINEIN
 }

@@ -9,8 +9,8 @@ import { Grid, Home, LocateFixedIcon, Menu } from "lucide-react";
 
 const HEADERDATA = [
   { title: "الرئيسية", link: "/" ,icon:Home},
-  { title: "المنيو", link: "/#menu",icon:Grid },
-  { title: "موقعنا", link: "https://maps.app.goo.gl/eV57Y5aP2kSYqmjBA", icon:LocateFixedIcon },
+  { title: "قائمة الطعام", link: "/#menu",icon:Grid },
+  { title: "تواصل معنا", link: "/#contact-us", icon:LocateFixedIcon },
 ];
 
 

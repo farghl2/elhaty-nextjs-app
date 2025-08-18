@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 const SOCIALCARDS =[
-    {icon:FaFacebookF, url:'https://www.facebook.com/profile.php?id=61578594356110'},
-    {icon:FaInstagram, url:'https://www.instagram.com/nextdigitx'},
+    {icon:FaFacebookF, url:'https://www.facebook.com/ElhatyElswry'},
+    {icon:FaInstagram, url:'https://www.instagram.com/Elhaty.eg'},
     {icon:FaTiktok, url:'https://www.tiktok.com/@nextdigitx'},
 ]
 

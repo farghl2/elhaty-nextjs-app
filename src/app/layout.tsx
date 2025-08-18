@@ -5,6 +5,7 @@ import "./globals.css";
 import { Cairo } from "next/font/google";
 import Header from "@/components/custom/atoms/Header";
 import WhatsAppBtn from "@/components/custom/atoms/WhatsAppBtn";
+import QueryProvider from "@/components/custom/atoms/QueryProvider";
 
 const cairo = Cairo({
   subsets: ["arabic"],
@@ -34,8 +35,10 @@ export default function RootLayout({
         className={`${cairo.variable}  antialiased`}
       >
        
-        
+        <QueryProvider>
+
         {children}
+        </QueryProvider>
 
       </body>
     </html>
