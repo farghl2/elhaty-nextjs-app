@@ -1,62 +1,11 @@
 import { Badge } from "@/components/ui/badge"
 import { ProductCard } from "../atoms/ProductCard"
-import { Plate, ServiceType } from "@/lib/types"
+
 import CustomSectionTitle from "../atoms/CustomSectionTitle"
 
 
 
-const menuData:Plate[] =[
-  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
-    sizes:[
-      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
-      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
-      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
-  ]
-  },
-  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
-    sizes:[
-      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
-      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
-      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
-  ]
-  },
-  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
-    sizes:[
-      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
-      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
-      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
-  ]
-  },
-  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
-    sizes:[
-      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
-      {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
-      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
-  ]
-  },
-  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة نص فرخ نص فرخ',
-    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
-    sizes:[
-      // {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
-      // {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
-      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
-  ]
-  },
-  {id:1,title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة نص فرخ نص فرخ',
-    imageUrl:'/meal.jpg',categoryId:111,status:true,bestSale:false,
-    sizes:[
-      {id:1,prices:[{id:1,type:ServiceType.DINEIN,price:100}],size:'L'},
-      // {id:2,prices:[{id:2,type:ServiceType.DINEIN,price:80}],size:'S'},
-      {id:3,prices:[{id:3,type:ServiceType.DINEIN,price:90,offer:0}],size:'M'},
-  ]
-  },
- 
- 
-]
+const menuData =[]
 const Menu = () => {
   return (
    <section id="menu" className=" mx-auto">

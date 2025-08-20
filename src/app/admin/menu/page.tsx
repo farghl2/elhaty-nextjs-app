@@ -1,11 +1,11 @@
-import { Button } from '@/components/ui/button'
+
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Plus } from 'lucide-react'
+
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import TolTip from '@/components/custom/atoms/ToolTip'
-import Catigories from './Catigories'
-import AddPlateDialog from './AddPlate'
+import AddPlateDialog from './plate/AddPlate'
+import Catigories from './catigories/Catigories'
 
 
 

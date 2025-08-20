@@ -9,7 +9,15 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
-  const data = await req.json();
-  const category = await prisma.category.create({ data });
-  return NextResponse.json(category);
+   try {
+    const { name } = await req.json()
+    if (!name || typeof name !== 'string') {
+      return NextResponse.json({ message: 'اسم غير صالح' }, { status: 400 })
+    }
+
+    const category = await prisma.category.create({ data: { name } })
+    return NextResponse.json(category, { status: 201 })
+  } catch (e) {
+    return NextResponse.json({ message: 'خطأ بالخادم' }, { status: 500 })
+  }
 }

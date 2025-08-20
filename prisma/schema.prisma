@@ -13,42 +13,43 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
+
 model Plate {
-  id          Int         @id @default(autoincrement())
+  id          Int       @id @default(autoincrement())
   title       String
   desc        String
   imageUrl    String
-  status      Boolean
-  bestSale    Boolean
-  category    Category    @relation(fields: [categoryId], references: [id])
   categoryId  Int
-  sizes       PlateSize[]
+  status      Boolean   @default(true)
+  bestSale    Boolean   @default(false)
+  sizes       Size[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  category    Category  @relation(fields: [categoryId], references: [id])
 }
 
-model PlateSize {
-  id       Int     @id @default(autoincrement())
-  size     String
-  plate    Plate   @relation(fields: [plateId], references: [id])
-  plateId  Int
-  prices   PlateSizePrice[]
-}
+model Size {
+  id            Int     @id @default(autoincrement())
+  size          SizeType
+  takeawayPrice Float
+  dineinPrice   Float
+  plateId        Int
 
-model PlateSizePrice {
-  id          Int     @id @default(autoincrement())
-  type        ServiceType
-  price       Float
-  offer       Float?
-  plateSize   PlateSize @relation(fields: [plateSizeId], references: [id])
-  plateSizeId Int
+  plate          Plate    @relation(fields: [plateId], references: [id])
 }
 
 model Category {
-  id     Int     @id @default(autoincrement())
-  name   String
+  id    Int     @id @default(autoincrement())
+  name  String
   plates Plate[]
 }
 
-enum ServiceType {
-  TAKEAWAY
-  DINEIN
+enum SizeType {
+  S
+  M
+  L
+  R
 }
+

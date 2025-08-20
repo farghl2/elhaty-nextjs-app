@@ -10,7 +10,7 @@ import Offers from "@/components/custom/large/Offers"
 
 export default function Home() {
   return (
-    <div className="w-full bg-prima">
+    <div className="w-full bg-primary">
       <Header />
         <CallPhone phoneNumber={+201122882154}/>
       <Hero/>
