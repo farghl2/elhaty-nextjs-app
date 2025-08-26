@@ -28,8 +28,9 @@ export const ProductCard = ({plate}:ProductCardProps) => {
           {plate.sizes.map((item)=><>
           <p>{item.size}
 
-            {item.prices.map((item)=>
-          <p>{item.price}</p>)}
+            
+          {item.dineinPrice}
+          {item.takeawayPrice}
           </p>
           </>)}
         

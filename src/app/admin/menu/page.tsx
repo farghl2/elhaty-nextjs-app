@@ -1,4 +1,4 @@
-
+'use client'
 import { ScrollArea } from '@/components/ui/scroll-area'
 
 import { Separator } from '@/components/ui/separator'
@@ -6,67 +6,29 @@ import Image from 'next/image'
 import TolTip from '@/components/custom/atoms/ToolTip'
 import AddPlateDialog from './plate/AddPlate'
 import Catigories from './catigories/Catigories'
+import { useQuery } from '@tanstack/react-query'
+import { Plate } from '@/lib/types'
+import UpdatePlate from './plate/UpdatePlate'
+import { ProductCard } from '@/components/custom/atoms/ProductCard'
+import { Card } from '@/components/ui/card'
+import { Loader } from 'lucide-react'
+
+async function getPlates():Promise<{id:string,name:string,plates:Plate[]}[]> {
+  const res = await fetch("/api/plates")
+  if (!res.ok) throw new Error("Failed to fetch categories")
+  return res.json()
+}
 
 
 
-const menuData =[
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  {id:'1',title:'نص فرخة مشوي', desc:'نص فرخ نص فرخة نص فرخة نص فرخة',
-    price:150,offer:0,images:'/meal.jpg',
-  },
-  
-]
 const Menu = () => {
+  const { data,isPending}= useQuery({
+    queryKey:['get-plates'],
+    queryFn:getPlates
+  })
+
+
+  if(isPending) return <div className='h-[80vh] flex justify-center items-center'><Loader className='animate-spin' /></div>
   return (
     <section className='w-full  mx-auto px-4'>
       <div className='flex items-center justify-between'>
@@ -75,52 +37,45 @@ const Menu = () => {
       <Catigories />
       </div>
       <div className='h-0.5 my-8 w-full bg-muted-foreground'/>
-      <ScrollArea className='h-[80vh] mt-8 pb-8'>
-      {menuData.map((item, index)=> 
-      <>
-        <div className='w-full flex items-center justify-evenly py-5'>
-             <TolTip content='الاسم'>
+      <ScrollArea className='min-h-[80vh] w-full mt-8 sm:pb-8'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
 
-            <span>{item.title}</span>
-             </TolTip>
-            
-            <TolTip content='الصورة'>
+        {data?data?.map((item)=>
 
-            <span><Image src={item.images} width={62} height={62} alt='item'
-            className='rounded-lg'
-            /></span>
-            </TolTip>
+item.plates.map((item)=><UpdatePlate plate={item}>
+        <Card key={item.id} className='flex flex-row-reverse justify-between px-2 gap-4'>
+          <Image src={item.imageUrl} className='rounded-lg object-cover' width={62} height={62} alt='img'/>
+          <div>
+          <h4>{item.title}</h4>
+          <h5>{item.desc}</h5>
+<div className='flex'>
+  <div>
+    <span className='block'>.</span>
+            <span className='block'>صالة</span>
+            <span className='block'>تيك اوي</span>
+  </div>
+          <div className='flex flex-1 justify-around'>
+           
+            {item&& item.sizes.map((s)=>
+            <div>
+              <p>{s.size}</p>
+              <p> {s.dineinPrice}</p>
+              <p> {s.takeawayPrice}</p>
+            </div>
+            )}
             
-            <TolTip content='price'>
-                
-                
-            <span className='flex items-center gap-1'>
-              {item.price}EGP
-               
-            </span>
-            </TolTip>
-            <TolTip content='الخصم'>
-                
-                
-            <span className='flex items-center gap-1'>
-              {item.offer}
-               
-            </span>
-            </TolTip>
-            <TolTip content='الحالة'>
-                
-                
-            <span className='flex items-center gap-1'>
-             
-            </span>
-            </TolTip>
-          
-            
-        </div>
-        <Separator />
-        
-      </>
-      )}
+          </div>
+          </div>
+              </div>
+
+        </Card>
+        </UpdatePlate>
+      )
+      
+    )
+    :<p>No data after no</p>}
+    </div>
+
       </ScrollArea>
     </section>
   )

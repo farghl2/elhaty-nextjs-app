@@ -9,7 +9,10 @@ export async function GET() {
   try {
     const categoriesWithPlates = await prisma.category.findMany({
       include: {
-        plates: true,
+        plates: {
+
+          include:{sizes:true}
+        }
       },
     });
 
@@ -31,7 +34,7 @@ export async function GET() {
 const formSchema = z.object({
   title: z.string().min(2, { message: "اسم الوجبة لازم يكون أطول من حرفين" }),
   desc: z.string().min(5, { message: "الوصف لازم يكون أطول من 5 أحرف" }),
-  imageUrl: z.string().url({ message: "رابط الصورة غير صحيح" }),
+  imageUrl: z.string().min(2,{ message: "رابط الصورة غير صحيح" }),
   categoryId: z.string().min(1, { message: "اختر الفئة" }),
   status: z.boolean(),
   bestSale: z.boolean(),
@@ -39,8 +42,8 @@ const formSchema = z.object({
     .array(
       z.object({
         size: z.enum(["S", "M", "L", "R"], { message: "اختر الحجم" }),
-        takeawayPrice: z.number().min(1, "سعر التيك أوي مطلوب"),
-        dineinPrice: z.number().min(1, "سعر الصالة مطلوب"),
+        takeawayPrice: z.string().min(1, "سعر التيك أوي مطلوب"),
+        dineinPrice: z.string().min(1, "سعر الصالة مطلوب"),
       })
     )
     .min(1, { message: "أضف حجم واحد على الأقل" }),
@@ -66,8 +69,8 @@ export async function POST(req: Request) {
         sizes: {
           create: data.sizes.map((s) => ({
             size: s.size,
-            takeawayPrice: s.takeawayPrice,
-            dineinPrice: s.dineinPrice,
+            takeawayPrice:parseInt(s.takeawayPrice),
+            dineinPrice:parseInt( s.dineinPrice),
           })),
         },
       },

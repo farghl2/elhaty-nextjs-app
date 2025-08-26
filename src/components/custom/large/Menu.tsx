@@ -5,14 +5,14 @@ import CustomSectionTitle from "../atoms/CustomSectionTitle"
 
 
 
-const menuData =[]
+
 const Menu = () => {
   return (
    <section id="menu" className=" mx-auto">
    <CustomSectionTitle title="قائمة الطعام"/>
     <Catigories />
     <div className="flex items-center flex-wrap justify-center  gap-1 mb-8 px-1">
-      {menuData.map((item,index)=><ProductCard plate={item} key={index}/>)}
+      {/* {menuData.map((item,index)=><ProductCard plate={item} key={index}/>)} */}
     </div>
    </section>
   )

@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
-import { Plus } from 'lucide-react'
+import { Loader, Plus } from 'lucide-react'
 import React, { useState } from 'react'
 
 
@@ -49,12 +49,12 @@ const AddCatigory = () => {
       })
       if (!res.ok) {
         const err = await res.json().catch(() => ({}))
-        throw new Error(err?.message || 'فشل إنشاء التصنيف')
+        throw new Error(err?.message || 'فشل إنشاء الفئة')
       }
       return res.json()
     },
     onSuccess: () => {
-      toast.success('تم إضافة التصنيف بنجاح')
+      toast.success('تم إضافة الفئة بنجاح')
       form.reset()
       qc.invalidateQueries({ queryKey: ['categories'] })
     },
@@ -96,7 +96,7 @@ const AddCatigory = () => {
           />
 
           <Button type="submit" className="w-full" disabled={mutation.isPending}>
-            {mutation.isPending ? 'جاري الحفظ...' : <>إضافة <Plus className="ms-2 h-4 w-4" /></>}
+            حفظ الفئة {mutation.isPending &&<Loader className='animate-spin'/>}
           </Button>
         </form>
       </Form>

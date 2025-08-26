@@ -1,5 +1,7 @@
 "use client";
 
+import { Input } from "@/components/ui/input";
+import { Loader } from "lucide-react";
 import { useState } from "react";
 
 export default function UploadImage({ onUpload }: { onUpload: (url: string) => void }) {
@@ -24,7 +26,7 @@ export default function UploadImage({ onUpload }: { onUpload: (url: string) => v
 
     if (res.ok) {
       setPreview(data.url);
-      onUpload(data.url); // يرجع URL للصورة عشان يتخزن
+      onUpload(data.url); 
     } else {
       alert(data.error || "Upload failed");
     }
@@ -34,8 +36,8 @@ export default function UploadImage({ onUpload }: { onUpload: (url: string) => v
 
   return (
     <div className="flex flex-col gap-3">
-      <input type="file" accept="image/*" onChange={handleFileChange} />
-      {uploading && <p>Uploading...</p>}
+      <Input type="file" className="borde" accept="image/*" onChange={handleFileChange} />
+      {uploading && <p><Loader className="animate-spin"/></p>}
       {preview && (
         <img
           src={preview}

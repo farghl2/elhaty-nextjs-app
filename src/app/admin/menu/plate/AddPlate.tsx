@@ -12,12 +12,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useQuery } from "@tanstack/react-query"
 import { Switch } from "@/components/ui/switch"
 import UploadImage from "@/components/custom/atoms/UploadImage"
+import { toast } from "sonner"
+import { Loader, Plus } from "lucide-react"
 
 // ✅ validation schema
 const formSchema = z.object({
   title: z.string().min(2, { message: "اسم الوجبة لازم يكون أطول من حرفين" }),
   desc: z.string().min(5, { message: "الوصف لازم يكون أطول من 5 أحرف" }),
-  imageUrl: z.string().url({ message: "رابط الصورة غير صحيح" }),
+  imageUrl: z.string().min(2,{ message: "اضف صورة" }),
   categoryId: z.string().min(1, { message: "اختر الفئة" }),
     status: z.boolean(),
     bestSale:z.boolean(),
@@ -25,8 +27,8 @@ const formSchema = z.object({
     .array(
       z.object({
         size:  z.enum(["S", "M", "L", "R"], { message: "اختر الحجم" }),
-        takeawayPrice: z.number().min(1, "سعر التيك أوي مطلوب"),
-        dineinPrice: z.number().min(1, "سعر الصالة مطلوب"),
+        takeawayPrice: z.string().min(1, "سعر التيك اوي"),
+        dineinPrice: z.string().min(1, "سعر الصالة "),
       })
     )
     .min(1, { message: "أضف حجم واحد على الأقل" }),
@@ -36,7 +38,7 @@ type FormValues = z.infer<typeof formSchema>
 
 export default function AddPlateDialog() {
   const [open, setOpen] = useState(false)
-  const [upload, setUpload] = useState('')
+
 
     const { data: categories } = useQuery({
     queryKey: ['categories'],
@@ -64,9 +66,6 @@ export default function AddPlateDialog() {
     name: "sizes",
   })
 async function onSubmit(values: FormValues) {
-  console.log(values)
-  console.log("📌 Submitted values:", values)
-
   try {
     const res = await fetch("/api/plates", {
       method: "POST",
@@ -78,18 +77,20 @@ async function onSubmit(values: FormValues) {
 
     const data = await res.json()
     console.log("✅ Plate added:", data)
+    toast.success('تم الاضافة بنجاح')
 
     setOpen(false)
     form.reset()
   } catch (error) {
     console.error("❌ Error:", error)
+    alert(error)
   }
 }
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button>إضافة وجبة</Button>
+        <Button>إضافة وجبة <Plus /></Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
@@ -134,13 +135,13 @@ async function onSubmit(values: FormValues) {
               name="imageUrl"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>رابط الصورة</FormLabel>
+                  <FormLabel> الصورة</FormLabel>
                   <FormControl>
-                    <UploadImage onUpload={(url)=>{setUpload(url);
+                    <UploadImage onUpload={(url)=>
                       
-                      field.onChange(upload)
-                      console.log(field.value)
-                      }}/>
+                      field.onChange(url)
+                     
+                      }/>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -195,7 +196,7 @@ async function onSubmit(values: FormValues) {
                             <SelectItem value="S">صغير</SelectItem>
                             <SelectItem value="M">وسط</SelectItem>
                             <SelectItem value="L">كبير</SelectItem>
-                            <SelectItem value="R">عائلي</SelectItem>
+                            <SelectItem value="R">حجم واحد</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />
@@ -211,7 +212,8 @@ async function onSubmit(values: FormValues) {
                       <FormItem>
                         <FormLabel>سعر تيك أوي</FormLabel>
                         <FormControl>
-                          <Input type="number" {...field} onChange={(e) => field.onChange(Number(e.target.value))} />
+                          <Input type="text" {...field} onChange={(e) => 
+        field.onChange(e.target.value)} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -226,7 +228,8 @@ async function onSubmit(values: FormValues) {
                       <FormItem>
                         <FormLabel>سعر صالة</FormLabel>
                         <FormControl>
-                          <Input type="number" {...field} onChange={(e) => field.onChange(Number(e.target.value))} />
+                          <Input type="text" {...field} onChange={(e) => 
+        field.onChange(e.target.value)} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -242,7 +245,8 @@ async function onSubmit(values: FormValues) {
               <Button
                 type="button"
                 variant="outline"
-                onClick={() => append({ size: "M", takeawayPrice: 0, dineinPrice: 0 })}
+                onClick={() => append({size:'R',dineinPrice:'', takeawayPrice:''})}
+
               >
                 + إضافة حجم
               </Button>
@@ -256,7 +260,7 @@ async function onSubmit(values: FormValues) {
       <div className="space-y-0.5">
         <FormLabel>الحالة</FormLabel>
         <FormDescription>
-          فعل أو أوقف الفئة
+          فعل أو  اخفي الوجبة
         </FormDescription>
       </div>
       <FormControl>
@@ -272,7 +276,7 @@ async function onSubmit(values: FormValues) {
 
             {/* Submit */}
             <div className="flex justify-end">
-              <Button type="submit">حفظ الوجبة</Button>
+              <Button type="submit" disabled={form.formState.isLoading}>حفظ الوجبة {form.formState.isLoading&&  <Loader className="animate-spin"/>}</Button>
             </div>
           </form>
         </Form>
