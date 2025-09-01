@@ -1,11 +1,25 @@
 // app/api/categories/route.ts
 import { prisma } from "@/lib/prisma";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 
-export async function GET() {
-  const categories = await prisma.category.findMany({ include: { plates: true } });
-  return NextResponse.json(categories);
+export async function GET(req: NextRequest) {
+  try {
+      const admin = req.headers.get('referer')?.includes('admin') 
+      if(admin){
+         const categories = await prisma.category.findMany({ include: { plates: true } });
+        return NextResponse.json(categories, { status: 200 })
+
+      }else{
+
+        const categories = await prisma.category.findMany({ include: { plates: true },where:{plates:{some:{status:true}}} });
+        return NextResponse.json(categories, { status: 200 })
+      }
+   
+  } catch (e) {
+    return NextResponse.json({ message: 'خطأ بالخادم' }, { status: 500 })
+  }
+
 }
 
 export async function POST(req: Request) {

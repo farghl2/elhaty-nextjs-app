@@ -5,12 +5,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import EditCategoryForm from "./EditCategoryForm" 
+import { getCategories } from "@/app/services/catigories"
 
-async function getCategories() {
-  const res = await fetch("/api/categories")
-  if (!res.ok) throw new Error("Failed to fetch categories")
-  return res.json()
-}
+
 
 const DisplayCategories = () => {
   const [open, setOpen] = useState(false)

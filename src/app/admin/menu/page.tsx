@@ -12,12 +12,9 @@ import UpdatePlate from './plate/UpdatePlate'
 import { ProductCard } from '@/components/custom/atoms/ProductCard'
 import { Card } from '@/components/ui/card'
 import { Loader } from 'lucide-react'
+import { getPlates } from '@/app/services/getPlate'
 
-async function getPlates():Promise<{id:string,name:string,plates:Plate[]}[]> {
-  const res = await fetch("/api/plates")
-  if (!res.ok) throw new Error("Failed to fetch categories")
-  return res.json()
-}
+
 
 
 
@@ -28,16 +25,16 @@ const Menu = () => {
   })
 
 
-  if(isPending) return <div className='h-[80vh] flex justify-center items-center'><Loader className='animate-spin' /></div>
+  if(isPending) return <div className='h-[80vh]  flex justify-center items-center'><Loader className='animate-spin' /></div>
   return (
-    <section className='w-full  mx-auto px-4'>
+    <section className='w-full mt-5 mx-auto px-4'>
       <div className='flex items-center justify-between'>
 
         <AddPlateDialog />
       <Catigories />
       </div>
       <div className='h-0.5 my-8 w-full bg-muted-foreground'/>
-      <ScrollArea className='min-h-[80vh] w-full mt-8 sm:pb-8'>
+      <ScrollArea className='min-h-[80vh] w-full my-8 sm:pb-8'>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
 
         {data?data?.map((item)=>
@@ -45,9 +42,9 @@ const Menu = () => {
 item.plates.map((item)=><UpdatePlate plate={item}>
         <Card key={item.id} className='flex flex-row-reverse justify-between px-2 gap-4'>
           <Image src={item.imageUrl} className='rounded-lg object-cover' width={62} height={62} alt='img'/>
-          <div>
+          <div className='flex-1 text-center '>
           <h4>{item.title}</h4>
-          <h5>{item.desc}</h5>
+          <h5 className='text-muted-foreground my-2 text-sm'>{item.desc}</h5>
 <div className='flex'>
   <div>
     <span className='block'>.</span>

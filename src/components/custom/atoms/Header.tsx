@@ -3,9 +3,10 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 import Logo from "./Logo";
-import { useEffect, useState } from "react";
+
 import SocialCards from "./SocialCards";
 import { Grid, Home, LocateFixedIcon, Menu } from "lucide-react";
+import { Contrast, Moon, Sun } from "lucide-react";
 
 const HEADERDATA = [
   { title: "الرئيسية", link: "/" ,icon:Home},
@@ -15,10 +16,11 @@ const HEADERDATA = [
 
 
 const Header = () => {
+    const {setTheme, theme} = useTheme()
 
 
   return (
-    <section className={`bg-primary z-40 h-[60px] fixed w-full flex items-center}
+    <section className={`bg-primary dark:bg-accent z-40 h-[60px] fixed w-full flex items-center}
     `}>
       <div className="w-11/12 max-w-6xl mx-auto flex flex-row-reverse items-center justify-between">
        
@@ -37,6 +39,15 @@ const Header = () => {
             </Button>
           ))}
         </nav>
+         <Button  className="shadow-none bg-transparent" onClick={()=>theme === 'light'?setTheme('dark'):setTheme('light')}>
+            {theme === 'dark'&& <Sun />}
+           {theme === 'light'&& <Moon className="text-black"/>}
+           {theme === 'system'&& <Contrast className="text-black"/>}
+          </Button>
+          <div className="py-3 h-full">
+
+        <Separator orientation="vertical"/>
+          </div>
         <div className="hidden sm:block">
         <SocialCards />
         </div>
@@ -60,13 +71,15 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { useTheme } from "next-themes";
+import { Separator } from "@/components/ui/separator";
 
 const PhoneNavBar =()=>{
 
   return(
    <Sheet>
       <SheetTrigger>
-        <Menu className="text-accent w-6 h-6" />
+        <Menu className="text-accent dark:text-white w-6 h-6" />
       </SheetTrigger>
 
       <SheetContent side="left" className="w-[250px] sm:w-[300px]">

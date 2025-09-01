@@ -53,3 +53,13 @@ enum SizeType {
   R
 }
 
+model OfferPlate {
+  id         Int      @id @default(autoincrement())
+  title      String
+  desc       String?   // optional
+  imageUrl   String
+  status     Boolean   @default(true)
+  bestSale   Boolean   @default(false)
+  price      Float
+  offer      Float     @default(0)
+}

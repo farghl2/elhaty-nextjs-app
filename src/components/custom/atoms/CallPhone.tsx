@@ -2,7 +2,7 @@ import { PhoneCall } from "lucide-react";
 
 
 interface CallPhoneProps {
-  phoneNumber:number
+  phoneNumber:string
 }
 const CallPhone = ({phoneNumber}:CallPhoneProps) => {
   return (

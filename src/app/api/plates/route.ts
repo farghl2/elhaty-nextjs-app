@@ -1,22 +1,39 @@
 // app/api/plates/route.ts
 import { prisma } from "@/lib/prisma";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
 
 // CREATE or GET ALL
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
-    const categoriesWithPlates = await prisma.category.findMany({
-      include: {
-        plates: {
+    const admin = req.headers.get('referer')?.includes('admin') 
+    if(admin) {
+       const categoriesWithPlates = await prisma.category.findMany({
+        include: {
+          plates: {
+            
+  
+            include:{sizes:true}
+          }
+        },
+      });
+      return NextResponse.json(categoriesWithPlates);
 
-          include:{sizes:true}
-        }
-      },
-    });
+    }else{
 
-    return NextResponse.json(categoriesWithPlates);
+      const categoriesWithPlates = await prisma.category.findMany({
+        include: {
+          plates: {
+            where:{status:true,},
+  
+            include:{sizes:true}
+          }
+        },
+      });
+      return NextResponse.json(categoriesWithPlates);
+    }
+
   } catch (error) {
     console.error(error);
     return NextResponse.json(

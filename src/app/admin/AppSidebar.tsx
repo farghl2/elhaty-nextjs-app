@@ -11,7 +11,8 @@ import {
 } from "@/components/ui/sidebar"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import {  Grid, List, Settings  } from 'lucide-react';
+import {  Grid, List } from 'lucide-react';
+import LogoutBtn from "@/components/custom/atoms/LogoutBtn";
 
 // Menu items.
 const items = [
@@ -20,11 +21,11 @@ const items = [
     url: "menu",
     icon: Grid,
   },
-  // {
-  //   title: "الفئات",
-  //   url: "catigories",
-  //   icon: List,
-  // },
+  {
+    title: "العروض",
+    url: "offerPlate",
+    icon: List,
+  },
   // {
   //   title: "الاعدادات",
   //   url: "settings",
@@ -55,8 +56,11 @@ export function AppSidebar() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
+              <SidebarMenuItem>
+                <LogoutBtn />
+              </SidebarMenuItem>
             </SidebarMenu>
-          </SidebarGroupContent >
+          </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent >
     </Sidebar>

@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa6";
 const SOCIALCARDS =[
     {icon:FaFacebookF, url:'https://www.facebook.com/ElhatyElswry'},
     {icon:FaInstagram, url:'https://www.instagram.com/Elhaty.eg'},
-    {icon:FaTiktok, url:'https://www.tiktok.com/@nextdigitx'},
+    // {icon:FaTiktok, url:'https://www.tiktok.com/@nextdigitx'},
 ]
 
 const SocialCards = () => {
@@ -15,7 +15,7 @@ const SocialCards = () => {
         
         <div className="flex gap-5 items-center justify-center">
             {SOCIALCARDS.map((item,index)=>
-            <Link   target='_blank' key={index} href={item.url} className={`${cn(`bg-primary/75 text-white rounded-xl text-2xl dark:border-white border-1 p-2 shadowg hover:bg-secondary/95 dark:hover:bg-white/95 hover:text-primary`)} `}>
+            <Link   target='_blank' key={index} href={item.url} className={`${cn(`bg-primary/75 text-white rounded-xl text-2xl dark:border- border-1 p-2 shadowg hover:bg-secondary/95 dark:hover:bg-white/95 hover:text-primary`)} `}>
                 <item.icon  className="text-xl" />
             </Link>
             

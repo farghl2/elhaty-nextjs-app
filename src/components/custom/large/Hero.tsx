@@ -15,11 +15,11 @@ const Hero = () => {
   
   return (
    <section 
-    className="relative bg-[url('/rest.jpg')] bg-cover bg-center  min-h-screen flex items-center justify-center"
+    className="relative bg-[url('/rest.avif')] bg-cover bg-center  min-h-screen flex items-center justify-center"
    >
-    <div className="absolute z-0 top-0 left-0 w-full h-full bg-accent-foreground/30"/>
+    <div className="absolute z-0 top-0 left-0 w-full h-full bg-accent-foreground/30 dark:bg-accent/40"/>
      <div className="text-center z-10 px-4">
-        <h1 className=" text-muted text-2xl md:text-4xl max-w-3xl  flex flex-col items-center  justify-start mx-auto font-bold mb-4">
+        <h1 className=" text-white text-2xl md:text-4xl max-w-3xl  flex flex-col items-center  justify-start mx-auto font-bold mb-4">
            
            {TITEL}
         </h1>

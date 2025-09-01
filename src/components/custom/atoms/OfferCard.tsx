@@ -1,7 +1,8 @@
 import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
-import { OfferPlate } from '@/lib/types'
+import { OfferPlate } from '@prisma/client'
+
 
 interface OfferCardProps {
     plate:OfferPlate
@@ -11,7 +12,7 @@ const OfferCard = ({plate}:OfferCardProps) => {
      const discountPercentage = Math.round(((plate.price - plate.offer) / plate.price) * 100);
   return (
    <Card
-      className="relative p-0 min-w-[250px] rounded-lg text-center"
+      className="relative flex flex-col items-center justify-center p-0 max-w-[300px] rounded-lg text-center"
       >
         {plate.bestSale&& <span className="absolute top-4 left-4 bg-white text-primary pl-1 pr-3 py-1 rounded-full text-sm shadow-md flex items-center justify-between"><Image src={'/fire.gif'} height={22} width={22} unoptimized  alt='badge'/>  الأكثر مبيعًا</span>}
               {plate.offer!=0 && <span className="absolute top-16 -rotate-30 animate-wiggle left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-lg">{discountPercentage}% خصم</span>}

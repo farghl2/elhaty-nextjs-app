@@ -6,6 +6,7 @@ import { Cairo } from "next/font/google";
 import Header from "@/components/custom/atoms/Header";
 import WhatsAppBtn from "@/components/custom/atoms/WhatsAppBtn";
 import QueryProvider from "@/components/custom/atoms/QueryProvider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const cairo = Cairo({
   subsets: ["arabic"],
@@ -16,8 +17,8 @@ const cairo = Cairo({
 
 
 export const metadata: Metadata = {
-  title: "SpeedOrderX",
-  description: "خلي مطعمك ميوقفش طلبات",
+  title: "Elhaty | الحاتي",
+  description: "لحمة بلدي 100%",
 };
 
 export default function RootLayout({
@@ -34,11 +35,18 @@ export default function RootLayout({
       <body
         className={`${cairo.variable}  antialiased`}
       >
-       
+       <ThemeProvider
+         attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+       >
+
         <QueryProvider>
 
         {children}
         </QueryProvider>
+       </ThemeProvider>
 
       </body>
     </html>
