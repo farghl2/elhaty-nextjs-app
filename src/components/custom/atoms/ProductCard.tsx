@@ -33,7 +33,7 @@ export const ProductCard = ({plate}:ProductCardProps) => {
     /> 
     <div className='flex-1'>
       <div className='text-center mb-1'>
-        <h5>{plate.title}</h5>
+        <h5 className='my-1'>{plate.title}</h5>
         <p className='text-muted-foreground text-sm'>{plate.desc} </p>
       </div>
       <div className='flex items-center justify-around'>

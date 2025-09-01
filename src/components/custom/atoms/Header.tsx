@@ -42,7 +42,7 @@ const Header = () => {
          <Button  className="shadow-none bg-transparent" onClick={()=>theme === 'light'?setTheme('dark'):setTheme('light')}>
             {theme === 'dark'&& <Sun />}
            {theme === 'light'&& <Moon className="text-black"/>}
-           {theme === 'system'&& <Contrast className="text-black"/>}
+           {theme === 'system'&& <Contrast className="text-white"/>}
           </Button>
           <div className="py-3 h-full">
 
