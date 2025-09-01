@@ -21,11 +21,11 @@ export const ProductCard = ({plate}:ProductCardProps) => {
     <Image 
     src={plate.imageUrl}
     alt={plate.title}
-    width={82}
-    height={62}
+    width={120}
+    height={120}
     className= 'object-cover rounded-lg'
     /> 
-    <div>
+    <div className='flex-1'>
       <div className='text-center mb-1'>
         <h5>{plate.title}</h5>
         <p className='text-muted-foreground text-sm'>{plate.desc} </p>
@@ -35,9 +35,9 @@ export const ProductCard = ({plate}:ProductCardProps) => {
       <div key={i}>
         <p>{s.size}</p>
         {type === "dinein" ? (
-                <p>{s.dineinPrice} ج.م</p>
+                <p className='font-semibold'>{s.dineinPrice} ج.م</p>
               ) : (
-                <p>{s.takeawayPrice} ج.م</p>
+                <p className='font-semibold'>{s.takeawayPrice} ج.م</p>
               )}
       </div>
       )}
