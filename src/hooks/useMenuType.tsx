@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function useMenuType() {
   const searchParams = useSearchParams();
-  const [menuType, setMenuType] = useState<"dinein" | "takeaway">("dinein");
+  const [menuType, setMenuType] = useState<"dinein" | "takeaway">("takeaway");
 
   useEffect(() => {
     const typeFromUrl = searchParams.get("type") as "dinein" | "takeaway" | null;
