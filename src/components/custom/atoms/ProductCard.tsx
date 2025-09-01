@@ -21,7 +21,7 @@ export const ProductCard = ({plate}:ProductCardProps) => {
     <Image 
     src={plate.imageUrl}
     alt={plate.title}
-    width={62}
+    width={82}
     height={62}
     className= 'object-cover rounded-lg'
     /> 
