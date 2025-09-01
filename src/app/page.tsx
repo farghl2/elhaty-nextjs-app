@@ -16,7 +16,7 @@ export default function Home() {
         <CallPhone phoneNumber={PHONEN[0].n}/>
       <Hero/>
       <Offers />
-      <div className="h-0.5 w-full bg-primary dark:bg-white px-4 my-8"/>
+      
       <Menu/> 
       <div className="h-0.5 w-full bg-primary dark:bg-white px-4 my-8"/>
       <ContactUs />

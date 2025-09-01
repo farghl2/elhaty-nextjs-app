@@ -38,6 +38,7 @@ const Offers = () => {
         <div className={` flex items-center ${data?.length ==1? 'justify-center':''} scroll-smooth gap-2 overflow-x-auto px-4 `}>
             {data&&data.map((item,index)=><OfferCard plate={item} key={index} />)}
         </div>
+        <div className="h-0.5 w-full bg-primary dark:bg-white px-4 my-8"/>
     </section>
   )
 }
