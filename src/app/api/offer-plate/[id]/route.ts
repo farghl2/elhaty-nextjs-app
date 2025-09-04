@@ -30,8 +30,10 @@ export async function PUT(req: NextRequest, { params }: { params:Promise< { id: 
       where: { id: parseInt(id) },
       data:{
         ...data,
-        price:parseInt(data.price!),
-        offer:parseInt(data.offer!)
+        dineinPrice:parseInt(data.dineinPrice!),
+      takeawayPrice:parseInt(data.takeawayPrice!),
+      dineinOffer:data.dineinOffer? parseInt(data.dineinOffer):0,
+      takeawayOffer:data.takeawayOffer ?parseInt(data.takeawayOffer):0,
 
       },
     })

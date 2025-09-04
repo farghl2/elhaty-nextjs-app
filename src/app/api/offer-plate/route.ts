@@ -10,8 +10,10 @@ export async function POST(req: NextRequest) {
 
     const plate = await prisma.offerPlate.create({data:{
       ...data,
-      price:parseInt(data.price),
-      offer:parseInt(data.offer)
+      dineinPrice:parseInt(data.dineinPrice),
+      takeawayPrice:parseInt(data.takeawayPrice),
+      dineinOffer:data.dineinOffer? parseInt(data.dineinOffer):0,
+      takeawayOffer:data.takeawayOffer ?parseInt(data.takeawayOffer):0,
     }})
     return NextResponse.json(plate, { status: 201 })
   } catch (err: any) {

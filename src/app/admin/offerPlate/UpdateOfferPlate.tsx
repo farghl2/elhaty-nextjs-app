@@ -47,8 +47,10 @@ export default function UpdateOfferPlate({
       imageUrl: offerPlate.imageUrl,
       status: offerPlate.status,
       bestSale: offerPlate.bestSale,
-      price:offerPlate.price.toString(),
-      offer:offerPlate.offer.toString(),
+      takeawayPrice:offerPlate.takeawayPrice.toString(),
+      takeawayOffer:offerPlate.takeawayOffer? offerPlate.takeawayOffer.toString():'' ,
+      dineinPrice:offerPlate.dineinPrice.toString(),
+      dineinOffer:offerPlate.dineinOffer? offerPlate.dineinOffer.toString():'' ,
     },
   });
 
@@ -89,7 +91,7 @@ export default function UpdateOfferPlate({
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="sm:max-w-xl">
+      <DialogContent className="sm:max-w-xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>تعديل / حذف العرض</DialogTitle>
         </DialogHeader>
@@ -177,22 +179,18 @@ export default function UpdateOfferPlate({
                 </FormItem>
               )}
             />
+<div className="border p-2 rounded-lg ">
+              <h5 className="ml-5 pb-4">الصالة</h5>
+            <div className="flex gap-3 items-center">
 
             {/* Price */}
             <FormField
               control={form.control}
-              name="price"
+              name="dineinPrice"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>السعر</FormLabel>
-                  <FormControl>
-                    <Input
-                      type="text"
-                   
-                      {...field}
-                      
-                    />
-                  </FormControl>
+                  <FormControl><Input type="number" {...field} /></FormControl>
                   <FormMessage />
                 </FormItem>
               )}
@@ -201,22 +199,50 @@ export default function UpdateOfferPlate({
             {/* Offer */}
             <FormField
               control={form.control}
-              name="offer"
+              name="dineinOffer"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>الخصم %</FormLabel>
-                  <FormControl>
-                    <Input
-                      type="text"
-                   
-                      {...field}
-                      
-                    />
-                  </FormControl>
+                  <FormLabel>الخصم</FormLabel>
+                  <FormControl><Input placeholder="optional" type="number" {...field} /></FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+              />
+              </div>
+
+            </div >
+            <div className="border p-2 rounded-lg">
+              <h5 className="ml-5 pb-4">تيك اواي</h5>
+            <div className="flex gap-3 items-center">
+
+            {/* Price */}
+            <FormField
+              control={form.control}
+              name="takeawayPrice"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>السعر</FormLabel>
+                  <FormControl><Input  type="number" {...field} /></FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
+            {/* Offer */}
+            <FormField
+              control={form.control}
+              name="takeawayOffer"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>الخصم</FormLabel>
+                  <FormControl><Input placeholder="optional" type="number" {...field} /></FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+              />
+              </div>
+
+            </div>
 
             {/* Actions */}
             <div className="flex justify-between">

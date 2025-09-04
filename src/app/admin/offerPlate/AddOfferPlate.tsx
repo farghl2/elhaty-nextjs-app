@@ -29,8 +29,10 @@ export default function AddOfferPlate() {
     desc:'',
     imageUrl:'',
     bestSale:false,
-    offer:'',
-    price:'',
+    dineinPrice:'',
+    dineinOffer:'',
+    takeawayOffer:'',
+    takeawayPrice:'',
     status:true
    }
     
@@ -55,11 +57,11 @@ export default function AddOfferPlate() {
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog  open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button><Plus className="mr-2" /> إضافة عرض جديد</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-xl">
+      <DialogContent className="sm:max-w-xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>إضافة عرض جديد</DialogTitle>
         </DialogHeader>
@@ -108,10 +110,14 @@ export default function AddOfferPlate() {
               )}
             />
 
+            <div className="border p-2 rounded-lg ">
+              <h5 className="ml-5 pb-4">الصالة</h5>
+            <div className="flex gap-3 items-center">
+
             {/* Price */}
             <FormField
               control={form.control}
-              name="price"
+              name="dineinPrice"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>السعر</FormLabel>
@@ -124,16 +130,50 @@ export default function AddOfferPlate() {
             {/* Offer */}
             <FormField
               control={form.control}
-              name="offer"
+              name="dineinOffer"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>الخصم</FormLabel>
-                  <FormControl><Input type="number" {...field} /></FormControl>
+                  <FormControl><Input placeholder="optional" type="number" {...field} /></FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+              />
+              </div>
+
+            </div >
+            <div className="border p-2 rounded-lg">
+              <h5 className="ml-5 pb-4">تيك اواي</h5>
+            <div className="flex gap-3 items-center">
+
+            {/* Price */}
+            <FormField
+              control={form.control}
+              name="takeawayPrice"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>السعر</FormLabel>
+                  <FormControl><Input  type="number" {...field} /></FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
+            {/* Offer */}
+            <FormField
+              control={form.control}
+              name="takeawayOffer"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>الخصم</FormLabel>
+                  <FormControl><Input placeholder="optional" type="number" {...field} /></FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+              />
+              </div>
+
+            </div>
             {/* Status */}
             <FormField
               control={form.control}

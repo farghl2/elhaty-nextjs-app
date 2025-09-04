@@ -60,6 +60,8 @@ model OfferPlate {
   imageUrl   String
   status     Boolean   @default(true)
   bestSale   Boolean   @default(false)
-  price      Float
-  offer      Float     @default(0)
+  takeawayPrice Float
+  takeawayOffer      Float?     @default(0)
+  dineinPrice   Float
+  dineinOffer      Float?    @default(0)
 }
