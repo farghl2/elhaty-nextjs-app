@@ -13,7 +13,7 @@ import { useQuery } from "@tanstack/react-query"
 import { Switch } from "@/components/ui/switch"
 import UploadImage from "@/components/custom/atoms/UploadImage"
 import { toast } from "sonner"
-import { Loader, Plus } from "lucide-react"
+import { Loader, Plus, Trash } from "lucide-react"
 
 // ✅ validation schema
 const formSchema = z.object({
@@ -175,12 +175,15 @@ async function onSubmit(values: FormValues) {
             />
 
             {/* Sizes */}
-            <div className="space-y-2">
+            <div className="space-y-2 w-full">
               <h3 className="font-medium">الأحجام والأسعار</h3>
               {fields.map((field, index) => (
-                <div key={field.id} className="grid grid-cols-4 gap-2 items-end">
+                <div key={field.id} className="flex  items-end gap-2">
                   {/* Size Select */}
+                
+
                   <FormField
+                  
                     control={form.control}
                     name={`sizes.${index}.size`}
                     render={({ field }) => (
@@ -203,9 +206,11 @@ async function onSubmit(values: FormValues) {
                       </FormItem>
                     )}
                   />
+              
 
                   {/* Takeaway Price */}
                   <FormField
+                  
                     control={form.control}
                     name={`sizes.${index}.takeawayPrice`}
                     render={({ field }) => (
@@ -237,8 +242,8 @@ async function onSubmit(values: FormValues) {
                   />
 
                   {/* Remove Button */}
-                  <Button type="button" variant="destructive" onClick={() => remove(index)}>
-                    حذف
+                  <Button size={'icon'} type="button" variant="destructive" onClick={() => remove(index)}>
+                    <Trash />
                   </Button>
                 </div>
               ))}

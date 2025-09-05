@@ -19,16 +19,16 @@ export async function POST(req: NextRequest) {
   const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1e9)}${ext}`;
 
   // المسار داخل public/plates
-  const uploadDir = path.join(process.cwd(), "public/plates");
+  const uploadDir = path.join(process.cwd(), "plates");
   if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir, { recursive: true });
   }
 
   const filePath = path.join(uploadDir, uniqueName);
   fs.writeFileSync(filePath, buffer);
-
+  console.log(`plates/${uniqueName}`)
   return NextResponse.json({
     message: "File uploaded successfully",
-    url: `/plates/${uniqueName}`,
+    url: `${uniqueName}`,
   });
 }

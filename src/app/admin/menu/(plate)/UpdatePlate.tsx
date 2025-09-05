@@ -373,7 +373,7 @@ export default function UpdatePlateNoHookForm({
   );
 
   const router = useRouter();
-  // ✅ Update Plate
+  //  Update Plate
   async function onUpdate(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
@@ -397,7 +397,7 @@ export default function UpdatePlateNoHookForm({
 
       if (!res.ok) throw new Error("فشل التحديث");
 
-      toast.success("تم تعديل الوجبة ✅");
+      toast.success("تم تعديل الوجبة ");
       setOpen(false);
       router.refresh();
       
@@ -408,7 +408,7 @@ export default function UpdatePlateNoHookForm({
     }
   }
 
-  // ✅ Delete Plate
+  // Delete Plate
   async function onDelete() {
     if (!confirm("هل أنت متأكد من حذف هذه الوجبة؟")) return;
     setLoading(true);
@@ -474,7 +474,7 @@ export default function UpdatePlateNoHookForm({
             <label className="block text-sm font-medium">الصورة</label>
             <UploadImage onUpload={(url) => setImageUrl(url)} />
             {imageUrl && (
-              <img src={imageUrl} alt="preview" className="w-24 mt-2 rounded" />
+              <img src={`/api/static/${imageUrl}`} alt="preview" className="w-24 mt-2 rounded" />
             )}
           </div>
 
@@ -490,8 +490,7 @@ export default function UpdatePlateNoHookForm({
             {data?.map((item)=>
                 <SelectItem value={item.id}>{item.name}</SelectItem>
             )}
-                {/* <SelectItem value="2">برجر</SelectItem>
-                <SelectItem value="3">مشروبات</SelectItem> */}
+               
               </SelectContent>
             </Select>
           </div>
@@ -514,7 +513,7 @@ export default function UpdatePlateNoHookForm({
             {sizes.map((s, i) => (
               <div
                 key={i}
-                className="grid grid-cols-4 gap-2 items-end mb-2 border p-2 rounded"
+                className="flex gap-2 items-end mb-2 border p-2 rounded"
               >
                 <Select
                   onValueChange={(v) => updateSize(i, "size", v)}

@@ -2,6 +2,7 @@
 
 import { Input } from "@/components/ui/input";
 import { Loader } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function UploadImage({ onUpload }: { onUpload: (url: string) => void }) {
@@ -40,7 +41,8 @@ export default function UploadImage({ onUpload }: { onUpload: (url: string) => v
       {uploading && <p><Loader className="animate-spin"/></p>}
       {preview && (
         <img
-          src={preview}
+       
+          src={`/api/static/${preview}`}
           alt="Uploaded preview"
           className="w-32 h-32 object-cover rounded-lg border"
         />

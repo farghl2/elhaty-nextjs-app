@@ -17,6 +17,7 @@ interface ProductCardProps {
 export const ProductCard = ({plate}:ProductCardProps) => {
   const type = useMenuType();
   const [open, setOpen] = useState(false);
+  console.log(plate.imageUrl)
   return (
     <>
     <Dialog open={open} onOpenChange={setOpen}>
@@ -25,7 +26,7 @@ export const ProductCard = ({plate}:ProductCardProps) => {
       
    <Card className='flex w-full flex-row-reverse px-2 py-1'>
     <Image 
-    src={plate.imageUrl}
+    src={`/api/static/${plate.imageUrl}`}
     alt={plate.title}
     width={120}
     height={120}
@@ -55,7 +56,7 @@ export const ProductCard = ({plate}:ProductCardProps) => {
         <DialogHeader>
           <DialogTitle className='text-2xl'>{plate.title}</DialogTitle>
         </DialogHeader>
-        <Image alt={plate.title} src={plate.imageUrl} width={500} 
+        <Image alt={plate.title} src={`/api/static/${plate.imageUrl}`} width={500} 
          height={500}
          className='object-cover rounded-lg'
          />

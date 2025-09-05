@@ -26,7 +26,7 @@ const OfferCard = ({plate}:OfferCardProps) => {
         <Image
         className="rounded-lg object-cover p-0 m-0"
         alt={plate.title}
-        src={plate.imageUrl}
+        src={`/api/static/${plate.imageUrl}`}
         width={300}
         height={250}
         />
