@@ -483,12 +483,15 @@ export default function UpdatePlateNoHookForm({
             <label className="block text-sm font-medium">الفئة</label>
             <Select onValueChange={setCategoryId} value={categoryId}>
               <SelectTrigger>
-                <SelectValue placeholder="اختر الفئة" />
+              
+                <SelectValue  placeholder="اختر الفئة" />
+                
+                
               </SelectTrigger>
               <SelectContent 
             >
-            {data?.map((item)=>
-                <SelectItem value={item.id}>{item.name}</SelectItem>
+            {data&&data.map((item:{id:string, name:string})=>
+                <SelectItem key={item.id} value={item.id.toString()}>{item.name}</SelectItem>
             )}
                
               </SelectContent>

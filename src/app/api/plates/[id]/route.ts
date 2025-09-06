@@ -13,7 +13,7 @@ export async function PUT(req: NextRequest, {params}: { params:Promise< { id: st
         title: body.title,
         desc: body.desc,
         imageUrl: body.imageUrl,
-        categoryId: body.categoryId,
+        categoryId: parseInt(body.categoryId),
         status: body.status,
         bestSale: body.bestSale,
         sizes: {
