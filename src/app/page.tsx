@@ -6,14 +6,14 @@ import ContactUs from "@/components/custom/large/contactUs/ContactUs"
 import Hero from "@/components/custom/large/Hero"
 import Menu from "@/components/custom/large/Menu"
 import Offers from "@/components/custom/large/Offers"
-import { PHONEN } from "@/lib/const-data"
+import {  phoneNumber } from "@/lib/const-data"
 
 
 export default function Home() {
   return (
     <div className="w-full ">
       <Header />
-        <CallPhone phoneNumber={PHONEN[0].n}/>
+        <CallPhone phoneNumber={phoneNumber}/>
       <Hero/>
       <Offers />
       

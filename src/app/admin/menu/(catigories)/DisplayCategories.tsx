@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import EditCategoryForm from "./EditCategoryForm" 
 import { getCategories } from "@/app/services/catigories"
+import CustomDialog from "@/components/custom/atoms/CustomDialog"
 
 
 
@@ -25,17 +26,11 @@ const DisplayCategories = () => {
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button>الفئات</Button>
-      </DialogTrigger>
+    <CustomDialog 
+    open={open}
+    setOpen={setOpen}
+    title={editingCategory ? "تعديل الفئة" : " الفئات"}>
 
-      <DialogContent className="sm:max-w-lg">
-        <DialogHeader>
-          <DialogTitle>
-            {editingCategory ? "تعديل الفئة" : "قائمة الفئات"}
-          </DialogTitle>
-        </DialogHeader>
 
         <div className="mt-4">
           {isLoading && <p>جارٍ التحميل...</p>}
@@ -65,8 +60,8 @@ const DisplayCategories = () => {
             />
           )}
         </div>
-      </DialogContent>
-    </Dialog>
+        </CustomDialog>
+   
   )
 }
 

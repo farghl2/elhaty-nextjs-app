@@ -1,3 +1,4 @@
+import { logo } from '@/lib/const-data'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -10,8 +11,8 @@ const Logo = () => {
 
         {/* <span className="text-2xl inline-block  animate-wiggle">X</span> */}
 
-        <Image src={'/logo.avif'} alt='logo' width={72} height={62} />
-        <span className='text-white'>الحاتي | Elhaty</span>
+        <Image src={logo.imageUrl} alt='logo' width={72} height={62} />
+        <span className='text-white'>{logo.name}</span>
 
         </Link>
   )

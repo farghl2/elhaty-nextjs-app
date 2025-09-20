@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 
 import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Form, FormControl,  FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 
@@ -14,6 +13,7 @@ import UploadImage from "@/components/custom/atoms/UploadImage"
 import { toast } from "sonner"
 import { Loader, Plus } from "lucide-react"
 import { OfferPlateInput, offerPlateSchema } from "@/lib/validations/offerPlate"
+import CustomDialog from "@/components/custom/atoms/CustomDialog"
 
 
 export default function AddOfferPlate() {
@@ -57,14 +57,11 @@ export default function AddOfferPlate() {
   }
 
   return (
-    <Dialog  open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button><Plus className="mr-2" /> إضافة عرض جديد</Button>
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle>إضافة عرض جديد</DialogTitle>
-        </DialogHeader>
+   <CustomDialog 
+   open={open}
+   setOpen={setOpen}
+   title="اضافة عرض جديد">
+
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -210,8 +207,8 @@ export default function AddOfferPlate() {
             </div>
           </form>
         </Form>
-      </DialogContent>
-    </Dialog>
+        </CustomDialog>
+    
   )
 }
 

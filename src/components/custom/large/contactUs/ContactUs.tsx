@@ -5,12 +5,13 @@ import Link from 'next/link'
 import { title } from 'process'
 import { Item } from '@radix-ui/react-select'
 import ContactUsCard from './ContactUsCard'
-import { PHONEN } from '@/lib/const-data'
+import { contactusData, PHONEN } from '@/lib/const-data'
 
 
 const CONTACTUSDATA = [
-    {title:<Link className='text-center' href={'https://maps.app.goo.gl/ip7yFL25SwpGbW2t6'} target='_blank'>
-        7 ش محمد حسن الشجاعي متفرع من - ش سوتر الازاريطة ثاني شارع يمين بعد مزلقان الترام</Link>
+    {title:<Link className='text-center' href={contactusData.addressUrl} target='_blank'>
+       {contactusData.addressTitle}
+       </Link>
         ,icon:LocateFixed},
     {title:<p className='flex flex-col items-start gap-2'>
         {PHONEN.map((item,index)=>
@@ -20,7 +21,7 @@ const CONTACTUSDATA = [
         ,icon:PhoneCall},
         {
             title:<p className='text-center'> 
-                جميع ايام الاسبوع من 12.30 ص - الي 2.30 ص
+               {contactusData.workTime}
                     </p>,
             icon:CalendarClock
         }

@@ -16,6 +16,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input'
 
 import { toast } from 'sonner'
+import CustomDialog from '@/components/custom/atoms/CustomDialog'
 
 
 // 1) Schema
@@ -30,7 +31,7 @@ type FormValues = z.infer<typeof schema>
 
 
 const AddCatigory = () => {
-    const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
     const qc = useQueryClient()
 
   const form = useForm<FormValues>({
@@ -68,16 +69,11 @@ const AddCatigory = () => {
   return (
     
     
-<Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button>
-          إضافة فئة <Plus className="ml-2" />
-        </Button>
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-lg">
-        <DialogHeader>
-          <DialogTitle>إضافة فئة جديدة</DialogTitle>
-        </DialogHeader>
+<CustomDialog 
+open={open}
+setOpen={setOpen}
+title='إضافة فئة '>
+
 
         <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -100,9 +96,8 @@ const AddCatigory = () => {
           </Button>
         </form>
       </Form>
-        </DialogContent>
-
-        </Dialog >
+      </CustomDialog>
+       
   )
 }
 

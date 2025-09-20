@@ -1,4 +1,4 @@
-import { FaWhatsapp } from 'react-icons/fa'; // أيقونة واتساب
+import { FaWhatsapp } from 'react-icons/fa'; 
 
 interface WhatsAppBtnProps {
   phoneNumber:number

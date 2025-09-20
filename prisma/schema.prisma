@@ -34,7 +34,7 @@ model Size {
   id            Int     @id @default(autoincrement())
   size          SizeType
   takeawayPrice Float
-  dineinPrice   Float
+  dineinPrice   Float?
   plateId        Int
 
   plate          Plate    @relation(fields: [plateId], references: [id], onDelete: Cascade)

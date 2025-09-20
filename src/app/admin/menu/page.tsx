@@ -35,7 +35,7 @@ const Menu = () => {
       </div>
       <div className='h-0.5 my-8 w-full bg-muted-foreground'/>
       <ScrollArea className='min-h-[80vh] w-full my-8 sm:pb-8'>
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5 gap-x-2'>
 
         {data?data?.map((item)=>
 

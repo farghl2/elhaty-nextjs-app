@@ -1,13 +1,7 @@
+import { SOCIALCARDS } from '@/lib/const-data';
 import { cn } from '@/lib/utils'
 import Link from 'next/link';
 
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa6";
-
-const SOCIALCARDS =[
-    {icon:FaFacebookF, url:'https://www.facebook.com/ElhatyElswry'},
-    {icon:FaInstagram, url:'https://www.instagram.com/Elhaty.eg'},
-    // {icon:FaTiktok, url:'https://www.tiktok.com/@nextdigitx'},
-]
 
 const SocialCards = () => {
   return (

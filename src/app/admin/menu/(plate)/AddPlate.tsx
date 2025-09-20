@@ -1,9 +1,8 @@
 "use client"
 
-import { useState } from "react"
+
 import { useForm, useFieldArray } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
@@ -14,31 +13,14 @@ import { Switch } from "@/components/ui/switch"
 import UploadImage from "@/components/custom/atoms/UploadImage"
 import { toast } from "sonner"
 import { Loader, Plus, Trash } from "lucide-react"
+import { plateFormSchema, PlateInput } from "@/lib/validations/plate"
+import CustomDialog from "@/components/custom/atoms/CustomDialog"
+import { useState } from "react"
 
-// ✅ validation schema
-const formSchema = z.object({
-  title: z.string().min(2, { message: "اسم الوجبة لازم يكون أطول من حرفين" }),
-  desc: z.string().min(5, { message: "الوصف لازم يكون أطول من 5 أحرف" }),
-  imageUrl: z.string().min(2,{ message: "اضف صورة" }),
-  categoryId: z.string().min(1, { message: "اختر الفئة" }),
-    status: z.boolean(),
-    bestSale:z.boolean(),
-  sizes: z
-    .array(
-      z.object({
-        size:  z.enum(["S", "M", "L", "R"], { message: "اختر الحجم" }),
-        takeawayPrice: z.string().min(1, "سعر التيك اوي"),
-        dineinPrice: z.string().min(1, "سعر الصالة "),
-      })
-    )
-    .min(1, { message: "أضف حجم واحد على الأقل" }),
-})
-
-type FormValues = z.infer<typeof formSchema>
 
 export default function AddPlateDialog() {
-  const [open, setOpen] = useState(false)
 
+const [open,setOpen] = useState(false)
 
     const { data: categories } = useQuery({
     queryKey: ['categories'],
@@ -48,8 +30,8 @@ export default function AddPlateDialog() {
     }
   })
 
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<PlateInput>({
+    resolver: zodResolver(plateFormSchema),
     defaultValues: {
       title: "",
       desc: "",
@@ -65,7 +47,7 @@ export default function AddPlateDialog() {
     control: form.control,
     name: "sizes",
   })
-async function onSubmit(values: FormValues) {
+async function onSubmit(values: PlateInput) {
   try {
     const res = await fetch("/api/plates", {
       method: "POST",
@@ -82,21 +64,17 @@ async function onSubmit(values: FormValues) {
     setOpen(false)
     form.reset()
   } catch (error) {
-    console.error("❌ Error:", error)
+    console.error("Error:", error)
     alert(error)
   }
 }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button>إضافة وجبة <Plus /></Button>
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle>إضافة وجبة جديدة</DialogTitle>
-        </DialogHeader>
-
+   <CustomDialog 
+   open={open}
+   setOpen={setOpen}
+   title="إضافة وجبة ">
+ 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             {/* Title */}
@@ -285,8 +263,8 @@ async function onSubmit(values: FormValues) {
             </div>
           </form>
         </Form>
-      </DialogContent>
-    </Dialog>
+          </CustomDialog>
+   
   )
 }
 

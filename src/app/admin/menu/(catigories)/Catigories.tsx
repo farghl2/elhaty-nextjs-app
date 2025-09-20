@@ -1,5 +1,4 @@
-import { Button } from '@/components/ui/button'
-import {  ChevronLeft, Plus } from 'lucide-react'
+
 import React from 'react'
 import AddCatigory from './AddCatigory'
 import DisplayCategories from './DisplayCategories'

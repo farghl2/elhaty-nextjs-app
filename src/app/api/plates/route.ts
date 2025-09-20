@@ -1,8 +1,9 @@
 // app/api/plates/route.ts
 import { prisma } from "@/lib/prisma";
+import { plateFormSchema } from "@/lib/validations/plate";
 import { NextRequest, NextResponse } from "next/server";
-import { z } from "zod";
 
+import {z} from 'zod'
 
 // CREATE or GET ALL
 export async function GET(req: NextRequest) {
@@ -46,35 +47,15 @@ export async function GET(req: NextRequest) {
 
 
 
-
-// ✅ Zod Schema (same as your formSchema)
-const formSchema = z.object({
-  title: z.string().min(2, { message: "اسم الوجبة لازم يكون أطول من حرفين" }),
-  desc: z.string().min(5, { message: "الوصف لازم يكون أطول من 5 أحرف" }),
-  imageUrl: z.string().min(2,{ message: "رابط الصورة غير صحيح" }),
-  categoryId: z.string().min(1, { message: "اختر الفئة" }),
-  status: z.boolean(),
-  bestSale: z.boolean(),
-  sizes: z
-    .array(
-      z.object({
-        size: z.enum(["S", "M", "L", "R"], { message: "اختر الحجم" }),
-        takeawayPrice: z.string().min(1, "سعر التيك أوي مطلوب"),
-        dineinPrice: z.string().min(1, "سعر الصالة مطلوب"),
-      })
-    )
-    .min(1, { message: "أضف حجم واحد على الأقل" }),
-});
-
-// ✅ POST route
+// POST route
 export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    // validate with zod
-    const data = formSchema.parse(body);
 
-    // create plate in DB
+    const data = plateFormSchema.parse(body);
+
+ 
     const plate = await prisma.plate.create({
       data: {
         title: data.title,
