@@ -1,0 +1,170 @@
+[
+    {
+        "id": 11,
+        "name": "وجبات التوفير",
+        "plates": [
+            {
+                "id": 94,
+                "title": "عرض 1",
+                "desc": "2 قطعة كفتة2+2 قطعة سجق + شريحة لحمة + أرز بسمتي + ثومية + بطاطس + مخلل22222222",
+                "imageUrl": "1759589762002-419256789.webp",
+                "categoryId": 11,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-04T14:56:27.355Z",
+                "updatedAt": "2025-10-05T23:16:53.537Z",
+                "sizes": [ { "id": 859, "size": "R", "takeawayPrice": 140, "dineinPrice": 140, "plateId": 94 } ]
+            },
+            {
+                "id": 97,
+                "title": " عرض 2",
+                "desc": "2 قطعة كفتة2 + قطعة بانية + 3شريحة قلوب+ أرز بسمتي + ثومية + بطاطس + مخلل2",
+                "imageUrl": "1759589816025-293387328.webp",
+                "categoryId": 11,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-04T14:59:54.322Z",
+                "updatedAt": "2025-10-05T23:18:53.591Z",
+                "sizes": [ { "id": 860, "size": "R", "takeawayPrice": 160, "dineinPrice": 160, "plateId": 97 } ]
+            },
+            {
+                "id": 96,
+                "title": "عرض 1",
+                "desc": " قطعة كفتة2+2 قطعة سجق + شريحة لحمة + أرز بسمتي + ثومية2",
+                "imageUrl": "1759589762002-419256789.webp",
+                "categoryId": 11,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-04T14:59:00.045Z",
+                "updatedAt": "2025-10-05T23:22:41.585Z",
+                "sizes": [ { "id": 861, "size": "R", "takeawayPrice": 140, "dineinPrice": 140, "plateId": 96 } ]
+            },
+            {
+                "id": 95,
+                "title": " عرض 2",
+                "desc": "2 قطعة كفتة2 + قطعة بانية + 3شريحة قلوب + أرز بسمتي + ثومية + بطاطس + مخلل",
+                "imageUrl": "1759589816025-293387328.webp",
+                "categoryId": 11,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-04T14:57:18.053Z",
+                "updatedAt": "2025-10-07T10:50:07.359Z",
+                "sizes": [ { "id": 862, "size": "R", "takeawayPrice": 160, "dineinPrice": 160, "plateId": 95 } ]
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "سلطة",
+        "plates": [
+            {
+                "id": 36,
+                "title": "سلطة كول سلو",
+                "desc": "مصنوعة من الملفوف الطازج المبشور، الممزوج بصلصة المايونيز المنعشة.",
+                "imageUrl": "1757164124702-790268950.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T13:10:03.894Z",
+                "updatedAt": "2025-09-06T18:54:54.485Z",
+                "sizes": [ { "id": 863, "size": "R", "takeawayPrice": 20, "dineinPrice": 20, "plateId": 36 } ]
+            },
+            {
+                "id": 31,
+                "title": "سلطة طحينة",
+                "desc": "مصنوع من مزيج من الخضار ومعجون السمسم، وهو مزيج مثالي من النكهات والقوام، مثالي للاستمتاع به كطبق جانبي.",
+                "imageUrl": "1757162800862-198924995.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:47:38.409Z",
+                "updatedAt": "2025-09-06T18:53:22.444Z",
+                "sizes": [ { "id": 864, "size": "R", "takeawayPrice": 15, "dineinPrice": 15, "plateId": 31 } ]
+            },
+            {
+                "id": 32,
+                "title": "سلطة بابا غنوج ",
+                "desc": "مصنوع من الباذنجان المطبوخ والمهروس، ممزوج بالخضار، مثالي كطبق جانبي.",
+                "imageUrl": "1757163678601-361861990.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T13:01:59.003Z",
+                "updatedAt": "2025-09-06T18:53:31.607Z",
+                "sizes": [ { "id": 865, "size": "R", "takeawayPrice": 15, "dineinPrice": 15, "plateId": 32 } ]
+            },
+            {
+                "id": 33,
+                "title": "ثومية",
+                "desc": "صلصة مثالية للبطاطس المقلية أو الخضار أو كطبق جانبي مع أي وجبة.",
+                "imageUrl": "1757163776590-168275746.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T13:03:37.712Z",
+                "updatedAt": "2025-09-06T18:53:42.159Z",
+                "sizes": [ { "id": 866, "size": "R", "takeawayPrice": 15, "dineinPrice": 15, "plateId": 33 } ]
+            },
+            {
+                "id": 34,
+                "title": "سلطة بطاطس كاري",
+                "desc": "سلطة بطاطس",
+                "imageUrl": "1757163913485-438164118.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T13:06:50.454Z",
+                "updatedAt": "2025-09-06T18:53:51.241Z",
+                "sizes": [ { "id": 867, "size": "R", "takeawayPrice": 15, "dineinPrice": 15, "plateId": 34 } ]
+            },
+            {
+                "id": 35,
+                "title": "سلطة خضراء",
+                "desc": "السلطة الخضراء عبارة عن طبق مصنوع من الخضار الورقية الطازجة والمغطاة بالصلصة.",
+                "imageUrl": "1757164064182-792723724.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T13:08:08.418Z",
+                "updatedAt": "2025-09-06T18:53:58.842Z",
+                "sizes": [ { "id": 868, "size": "R", "takeawayPrice": 15, "dineinPrice": 15, "plateId": 35 } ]
+            },
+            {
+                "id": 38,
+                "title": "مسقعة",
+                "desc": "طبق شرق أوسطي تقليدي، يجمع بين مزيج من الخضار والأعشاب والتوابل، مما يخلق يخنة غنية وعطرية.",
+                "imageUrl": "1757164372275-254254581.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T13:13:35.510Z",
+                "updatedAt": "2025-09-06T18:54:11.730Z",
+                "sizes": [ { "id": 869, "size": "R", "takeawayPrice": 25, "dineinPrice": 25, "plateId": 38 } ]
+            },
+            {
+                "id": 39,
+                "title": "مخلل",
+                "desc": "أضف بعض الحيوية إلى وجباتك مع المخللات المصنوعة يدوياً والمتبلة بمزيج من التوابل.",
+                "imageUrl": "1757167801408-463181585.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T14:10:27.559Z",
+                "updatedAt": "2025-09-06T18:54:21.280Z",
+                "sizes": [ { "id": 870, "size": "R", "takeawayPrice": 10, "dineinPrice": 10, "plateId": 39 } ]
+            },
+            {
+                "id": 37,
+                "title": "سلطة رنجة",
+                "desc": "شرائح سمك الرنجة الطرية، ممزوجة بالخضار الطازجة، والبصل المنعش، والصلصة اللذيذة.",
+                "imageUrl": "1757164254383-532353703.webp",
+                "categoryId": 13,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T13:12:20.501Z",
+                "updatedAt": "2025-09-06T18:54:46.451Z",
+                "sizes": [ { "id": 871, "size": "R", "takeawayPrice": 25, "dineinPrice": 25, "plateId": 37 } ]
+            }
+        ]
+    }
+]

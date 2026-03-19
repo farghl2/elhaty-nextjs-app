@@ -1,0 +1,2349 @@
+[
+  {
+    "id": 1,
+    "name": "المشويات",
+    "plates": [
+      {
+        "id": 2,
+        "title": "كفتة مشوية شامي",
+        "desc": "كفتة مشوية مع شرائح الفلفل والطماطم 1/3 كجم ....1 كجم",
+        "imageUrl": "1757113743313-324107.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:09:24.950Z",
+        "updatedAt": "2025-10-11T11:13:12.342Z",
+        "sizes": [
+          {
+            "id": 204,
+            "size": "L",
+            "takeawayPrice": 680,
+            "dineinPrice": 750,
+            "plateId": 2
+          },
+          {
+            "id": 205,
+            "size": "S",
+            "takeawayPrice": 255,
+            "dineinPrice": 281,
+            "plateId": 2
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "title": " موزة بتلو قطعة ",
+        "desc": "موزة بتلو مشوية قطعة",
+        "imageUrl": "1757161407025-600052936.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:23:52.118Z",
+        "updatedAt": "2025-09-06T12:24:39.792Z",
+        "sizes": [
+          {
+            "id": 26,
+            "size": "R",
+            "takeawayPrice": 460,
+            "dineinPrice": 505,
+            "plateId": 22
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "title": "موزه ضأني مشوي بالقطعة ",
+        "desc": "قطعة موزه ضأني مشويه",
+        "imageUrl": "1757161330260-937995912.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:22:38.534Z",
+        "updatedAt": "2025-09-06T12:24:47.091Z",
+        "sizes": [
+          {
+            "id": 27,
+            "size": "R",
+            "takeawayPrice": 505,
+            "dineinPrice": 550,
+            "plateId": 21
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "title": "طبق بوراد",
+        "desc": "طبق مشكل من مخ وروزبيف وطحال ولسان",
+        "imageUrl": "1757161522154-504335512.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:25:37.843Z",
+        "updatedAt": "2025-09-06T12:25:37.843Z",
+        "sizes": [
+          {
+            "id": 28,
+            "size": "R",
+            "takeawayPrice": 385,
+            "dineinPrice": 420,
+            "plateId": 23
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "كفتة مشوية",
+        "desc": "كفتة مشوية 1/3  كجم ...1كجم",
+        "imageUrl": "1757105681458-481315390.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T20:17:56.509Z",
+        "updatedAt": "2025-10-11T11:08:45.342Z",
+        "sizes": [
+          {
+            "id": 202,
+            "size": "L",
+            "takeawayPrice": 660,
+            "dineinPrice": 725,
+            "plateId": 1
+          },
+          {
+            "id": 203,
+            "size": "S",
+            "takeawayPrice": 247,
+            "dineinPrice": 273,
+            "plateId": 1
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "كباب ضأني مشوي ",
+        "desc": "قطع من لحم الكباب الضأني المشويه 1/3كجم ... 1 كجم",
+        "imageUrl": "1757113846142-824734528.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:11:25.194Z",
+        "updatedAt": "2025-10-11T11:14:24.733Z",
+        "sizes": [
+          {
+            "id": 206,
+            "size": "L",
+            "takeawayPrice": 935,
+            "dineinPrice": 1020,
+            "plateId": 3
+          },
+          {
+            "id": 207,
+            "size": "S",
+            "takeawayPrice": 350,
+            "dineinPrice": 381,
+            "plateId": 3
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "كباب بتلو مشوي ",
+        "desc": "قطع من لحم الكباب المشويه 1/3كجم .... 1كجم",
+        "imageUrl": "1757113998979-173105120.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:13:38.955Z",
+        "updatedAt": "2025-10-11T11:15:17.735Z",
+        "sizes": [
+          {
+            "id": 208,
+            "size": "L",
+            "takeawayPrice": 935,
+            "dineinPrice": 1020,
+            "plateId": 4
+          },
+          {
+            "id": 209,
+            "size": "S",
+            "takeawayPrice": 350,
+            "dineinPrice": 381,
+            "plateId": 4
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "كلاوي بتلو مشوي ",
+        "desc": "كلاوي بتلو مشوي علي الفحم1/3 كجم...1كجم",
+        "imageUrl": "1757114230418-773774055.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:17:39.097Z",
+        "updatedAt": "2025-10-11T11:18:17.773Z",
+        "sizes": [
+          {
+            "id": 212,
+            "size": "L",
+            "takeawayPrice": 880,
+            "dineinPrice": 1020,
+            "plateId": 5
+          },
+          {
+            "id": 213,
+            "size": "S",
+            "takeawayPrice": 330,
+            "dineinPrice": 381,
+            "plateId": 5
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "كلاوي شمبري مشوي",
+        "desc": "شرائح كلاوي مشوي1/3كجم ... 1كجم",
+        "imageUrl": "1757114352994-399172133.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:20:00.006Z",
+        "updatedAt": "2025-10-11T11:20:00.096Z",
+        "sizes": [
+          {
+            "id": 214,
+            "size": "L",
+            "takeawayPrice": 660,
+            "dineinPrice": 725,
+            "plateId": 6
+          },
+          {
+            "id": 215,
+            "size": "S",
+            "takeawayPrice": 247,
+            "dineinPrice": 273,
+            "plateId": 6
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "ريش بتلو مشوي",
+        "desc": "ريش بتلو مشوي1/3 كجم ... 1 كجم",
+        "imageUrl": "1757114606061-333227644.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:23:51.797Z",
+        "updatedAt": "2025-10-11T11:26:55.050Z",
+        "sizes": [
+          {
+            "id": 220,
+            "size": "L",
+            "takeawayPrice": 935,
+            "dineinPrice": 1020,
+            "plateId": 8
+          },
+          {
+            "id": 221,
+            "size": "S",
+            "takeawayPrice": 350,
+            "dineinPrice": 381,
+            "plateId": 8
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": " نيفة مشوي",
+        "desc": "شرائح لحم مشوي1/3 كجم ... 1 كجم",
+        "imageUrl": "1757114944987-121830395.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:29:33.105Z",
+        "updatedAt": "2025-10-11T11:28:14.169Z",
+        "sizes": [
+          {
+            "id": 222,
+            "size": "L",
+            "takeawayPrice": 880,
+            "dineinPrice": 970,
+            "plateId": 9
+          },
+          {
+            "id": 223,
+            "size": "S",
+            "takeawayPrice": 330,
+            "dineinPrice": 363,
+            "plateId": 9
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "قلوب بتلو مشوي",
+        "desc": "شرائح قلوب مشوية علي الفحم1/3كجم ... 1كجم",
+        "imageUrl": "1757115066112-668465362.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:32:48.710Z",
+        "updatedAt": "2025-10-11T11:29:16.182Z",
+        "sizes": [
+          {
+            "id": 224,
+            "size": "L",
+            "takeawayPrice": 705,
+            "dineinPrice": 770,
+            "plateId": 10
+          },
+          {
+            "id": 225,
+            "size": "S",
+            "takeawayPrice": 265,
+            "dineinPrice": 289,
+            "plateId": 10
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "حلويات بتلو قطع",
+        "desc": "حلويات بتلو مشوي او مقلي 1/3 كجم ...1كجم",
+        "imageUrl": "1757115671463-680322302.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:41:42.128Z",
+        "updatedAt": "2025-10-11T11:30:18.816Z",
+        "sizes": [
+          {
+            "id": 226,
+            "size": "L",
+            "takeawayPrice": 770,
+            "dineinPrice": 847,
+            "plateId": 11
+          },
+          {
+            "id": 227,
+            "size": "S",
+            "takeawayPrice": 288,
+            "dineinPrice": 318,
+            "plateId": 11
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "لحم فلتو مشوي",
+        "desc": "شرائح لحم فلتو شمبري مشوي1/3 كجم ... 1 كجم",
+        "imageUrl": "1757115822088-688262666.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:44:00.465Z",
+        "updatedAt": "2025-10-11T11:35:32.911Z",
+        "sizes": [
+          {
+            "id": 230,
+            "size": "L",
+            "takeawayPrice": 935,
+            "dineinPrice": 1020,
+            "plateId": 12
+          },
+          {
+            "id": 231,
+            "size": "S",
+            "takeawayPrice": 350,
+            "dineinPrice": 381,
+            "plateId": 12
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "title": "طرب ضأني مشوي",
+        "desc": "كفته ملفوفه في منديل 1/3 كجم ... 1كجم",
+        "imageUrl": "1757116123913-696698999.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:49:25.078Z",
+        "updatedAt": "2025-10-11T11:42:06.988Z",
+        "sizes": [
+          {
+            "id": 238,
+            "size": "L",
+            "takeawayPrice": 880,
+            "dineinPrice": 970,
+            "plateId": 16
+          },
+          {
+            "id": 239,
+            "size": "S",
+            "takeawayPrice": 330,
+            "dineinPrice": 363,
+            "plateId": 16
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "title": "مشكل كباب وكفته مشوي",
+        "desc": "كباب وكفتة مشوي1/3 كجم ... 1كجم",
+        "imageUrl": "1757115942953-805990912.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:46:23.158Z",
+        "updatedAt": "2025-10-11T11:37:28.957Z",
+        "sizes": [
+          {
+            "id": 234,
+            "size": "L",
+            "takeawayPrice": 800,
+            "dineinPrice": 880,
+            "plateId": 13
+          },
+          {
+            "id": 235,
+            "size": "S",
+            "takeawayPrice": 300,
+            "dineinPrice": 330,
+            "plateId": 13
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "سجق مشوي علي الفحم ",
+        "desc": "سجق مشوي مع شرائح البصل1/3 كجم ... 1 كجم",
+        "imageUrl": "1757161141910-252780793.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:19:28.542Z",
+        "updatedAt": "2025-10-11T11:44:13.249Z",
+        "sizes": [
+          {
+            "id": 242,
+            "size": "L",
+            "takeawayPrice": 745,
+            "dineinPrice": 825,
+            "plateId": 19
+          },
+          {
+            "id": 243,
+            "size": "S",
+            "takeawayPrice": 280,
+            "dineinPrice": 308,
+            "plateId": 19
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "title": "مخاصي مشوي",
+        "desc": "قطع مخاصى مشويه1/3كجم ... 1كجم",
+        "imageUrl": "1757160940929-109922454.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:16:06.123Z",
+        "updatedAt": "2025-10-11T11:45:00.861Z",
+        "sizes": [
+          {
+            "id": 244,
+            "size": "L",
+            "takeawayPrice": 880,
+            "dineinPrice": 970,
+            "plateId": 17
+          },
+          {
+            "id": 245,
+            "size": "S",
+            "takeawayPrice": 330,
+            "dineinPrice": 363,
+            "plateId": 17
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "شيش طاووق",
+        "desc": "شيش طاووق مشوي علي الفحم1/3  كجم ... 1كجم",
+        "imageUrl": "1757161256466-698254028.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:21:13.477Z",
+        "updatedAt": "2025-10-11T11:46:04.313Z",
+        "sizes": [
+          {
+            "id": 246,
+            "size": "L",
+            "takeawayPrice": 705,
+            "dineinPrice": 770,
+            "plateId": 20
+          },
+          {
+            "id": 247,
+            "size": "S",
+            "takeawayPrice": 265,
+            "dineinPrice": 289,
+            "plateId": 20
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "title": "مشكل لحمةوكفتة",
+        "desc": "مشكل لحمةوكفتة 1/3كجم ... 1كجم",
+        "imageUrl": "1760182755237-523367529.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-11T11:40:54.887Z",
+        "updatedAt": "2025-10-11T11:40:54.887Z",
+        "sizes": [
+          {
+            "id": 236,
+            "size": "L",
+            "takeawayPrice": 770,
+            "dineinPrice": 847,
+            "plateId": 103
+          },
+          {
+            "id": 237,
+            "size": "S",
+            "takeawayPrice": 288,
+            "dineinPrice": 318,
+            "plateId": 103
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "title": "مزالكيا",
+        "desc": "مشكل مخاصي وقلوب وكلاوي 1/3كجم ... 1 كجم",
+        "imageUrl": "1759700134972-975574728.jpg",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:18:05.691Z",
+        "updatedAt": "2025-10-11T11:43:12.027Z",
+        "sizes": [
+          {
+            "id": 240,
+            "size": "L",
+            "takeawayPrice": 825,
+            "dineinPrice": 907,
+            "plateId": 18
+          },
+          {
+            "id": 241,
+            "size": "S",
+            "takeawayPrice": 310,
+            "dineinPrice": 341,
+            "plateId": 18
+          }
+        ]
+      },
+      {
+        "id": 93,
+        "title": "لحمة انتركوت 1ك",
+        "desc": "لحمة انتركوت 1/3 كجم ... 1كجم",
+        "imageUrl": "1759700789493-171580518.jpg",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:16:02.243Z",
+        "updatedAt": "2025-10-11T11:48:12.917Z",
+        "sizes": [
+          {
+            "id": 248,
+            "size": "L",
+            "takeawayPrice": 880,
+            "dineinPrice": 970,
+            "plateId": 93
+          },
+          {
+            "id": 249,
+            "size": "S",
+            "takeawayPrice": 330,
+            "dineinPrice": 363,
+            "plateId": 93
+          }
+        ]
+      },
+      {
+        "id": 92,
+        "title": "ريش ضاني1ك ",
+        "desc": "ريش ضاني1ك ",
+        "imageUrl": "1759700717410-150229943.jpg",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:15:06.250Z",
+        "updatedAt": "2025-10-05T21:45:21.008Z",
+        "sizes": [
+          {
+            "id": 162,
+            "size": "R",
+            "takeawayPrice": 935,
+            "dineinPrice": 1020,
+            "plateId": 92
+          }
+        ]
+      },
+      {
+        "id": 90,
+        "title": "كبدة بتلو ",
+        "desc": "كبدة بتلو 1/3كجم...1 كجم",
+        "imageUrl": "1759699865507-771817875.jpg",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:13:15.137Z",
+        "updatedAt": "2025-10-11T11:17:05.350Z",
+        "sizes": [
+          {
+            "id": 210,
+            "size": "L",
+            "takeawayPrice": 935,
+            "dineinPrice": 1020,
+            "plateId": 90
+          },
+          {
+            "id": 211,
+            "size": "S",
+            "takeawayPrice": 350,
+            "dineinPrice": 381,
+            "plateId": 90
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "كبدة شمبري مشوي",
+        "desc": "شرائح كبده مشوية علي الفحم 1/3كجم ... 1كجم",
+        "imageUrl": "1757114465222-153835598.webp",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-05T23:21:30.056Z",
+        "updatedAt": "2025-10-11T11:24:43.196Z",
+        "sizes": [
+          {
+            "id": 216,
+            "size": "L",
+            "takeawayPrice": 660,
+            "dineinPrice": 725,
+            "plateId": 7
+          },
+          {
+            "id": 217,
+            "size": "S",
+            "takeawayPrice": 247,
+            "dineinPrice": 273,
+            "plateId": 7
+          }
+        ]
+      },
+      {
+        "id": 91,
+        "title": "ريش ضاني",
+        "desc": "ريش ضاني1/3كجم ...1 كجم",
+        "imageUrl": "1759700766406-720827270.jpg",
+        "categoryId": 1,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:14:00.579Z",
+        "updatedAt": "2025-10-11T11:25:53.709Z",
+        "sizes": [
+          {
+            "id": 218,
+            "size": "L",
+            "takeawayPrice": 935,
+            "dineinPrice": 1020,
+            "plateId": 91
+          },
+          {
+            "id": 219,
+            "size": "S",
+            "takeawayPrice": 350,
+            "dineinPrice": 381,
+            "plateId": 91
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "الشوربة",
+    "plates": [
+      {
+        "id": 24,
+        "title": "شوربة لسان عصفور",
+        "desc": "قم بتدفئة روحك وإثارة ذوقك مع كل رشفة من حساء لسان العصفور المريح، المصنوع من معكرونة لسان العصفور الطرية والمرق اللذيذ للحصول على وجبة مرضية ولذيذة",
+        "imageUrl": "1757161883123-540947625.webp",
+        "categoryId": 2,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:32:04.858Z",
+        "updatedAt": "2025-09-06T12:32:04.858Z",
+        "sizes": [
+          {
+            "id": 29,
+            "size": "R",
+            "takeawayPrice": 66,
+            "dineinPrice": 73,
+            "plateId": 24
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "title": "شوربة كريمة",
+        "desc": "حساء ناعم ومخملي مصنوع من المرق والخضروات والكريمة",
+        "imageUrl": "1757162020185-409110354.webp",
+        "categoryId": 2,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:34:01.445Z",
+        "updatedAt": "2025-09-06T12:34:01.445Z",
+        "sizes": [
+          {
+            "id": 30,
+            "size": "R",
+            "takeawayPrice": 88,
+            "dineinPrice": 97,
+            "plateId": 25
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "title": "شوربة كوارع",
+        "desc": "انغمس في حساء الكوارع، وهو مرق لذيذ ولذيذ مملوء باللحوم الطرية والأعشاب العطرية ومزيج من الخضار، مما يوفر وعاء يبعث على الدفء والرضا.",
+        "imageUrl": "1757162075315-650042208.webp",
+        "categoryId": 2,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:34:51.170Z",
+        "updatedAt": "2025-09-06T12:34:51.170Z",
+        "sizes": [
+          {
+            "id": 31,
+            "size": "R",
+            "takeawayPrice": 120,
+            "dineinPrice": 135,
+            "plateId": 26
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "محاشي",
+    "plates": [
+      {
+        "id": 27,
+        "title": "محاشي خضار مشكل",
+        "desc": "محاشي فلفل كوسه بذنجان",
+        "imageUrl": "1757162293339-958726911.webp",
+        "categoryId": 3,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:38:37.919Z",
+        "updatedAt": "2025-09-06T12:38:37.919Z",
+        "sizes": [
+          {
+            "id": 32,
+            "size": "R",
+            "takeawayPrice": 310,
+            "dineinPrice": 330,
+            "plateId": 27
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "title": "محشي ورق عنب 1كجم",
+        "desc": "ورق عنب محشي ارز",
+        "imageUrl": "1757162417548-297155991.webp",
+        "categoryId": 3,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:40:54.880Z",
+        "updatedAt": "2025-09-06T12:40:54.880Z",
+        "sizes": [
+          {
+            "id": 33,
+            "size": "R",
+            "takeawayPrice": 330,
+            "dineinPrice": 363,
+            "plateId": 28
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "title": "ممبار 1كجم",
+        "desc": "امعاء محشوه ارز وتوابل",
+        "imageUrl": "1757162489833-941268121.webp",
+        "categoryId": 3,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:41:44.474Z",
+        "updatedAt": "2025-09-06T12:41:44.474Z",
+        "sizes": [
+          {
+            "id": 34,
+            "size": "R",
+            "takeawayPrice": 330,
+            "dineinPrice": 363,
+            "plateId": 29
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "title": " طبق سمبوسك لحمه",
+        "desc": " طبق سمبوسك لحمه باللحمه المفرومه",
+        "imageUrl": "1757162599759-49179875.webp",
+        "categoryId": 3,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:43:37.482Z",
+        "updatedAt": "2025-09-06T12:43:37.482Z",
+        "sizes": [
+          {
+            "id": 35,
+            "size": "R",
+            "takeawayPrice": 160,
+            "dineinPrice": 175,
+            "plateId": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "الطواجن",
+    "plates": [
+      {
+        "id": 40,
+        "title": " طاجن عكاوي",
+        "desc": "طبق لذيذ يحتوي على لحم ذيل الثور الطري المطبوخ ببطء مع التوابل",
+        "imageUrl": "1757171667825-677418781.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:15:06.071Z",
+        "updatedAt": "2025-09-06T15:15:06.071Z",
+        "sizes": [
+          {
+            "id": 51,
+            "size": "R",
+            "takeawayPrice": 143,
+            "dineinPrice": 155,
+            "plateId": 40
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "title": " طاجن حلالي",
+        "desc": "الاكله الشعبيه المليئه بالطاقه",
+        "imageUrl": "1757171738066-20589575.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:16:05.598Z",
+        "updatedAt": "2025-09-06T15:16:05.598Z",
+        "sizes": [
+          {
+            "id": 52,
+            "size": "R",
+            "takeawayPrice": 143,
+            "dineinPrice": 155,
+            "plateId": 41
+          }
+        ]
+      },
+      {
+        "id": 86,
+        "title": "مكرونة مبكبكة",
+        "desc": "طاجن مكرونة مكبكبة",
+        "imageUrl": "1759701170591-245111070.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:07:20.386Z",
+        "updatedAt": "2025-10-05T21:52:53.676Z",
+        "sizes": [
+          {
+            "id": 165,
+            "size": "R",
+            "takeawayPrice": 45,
+            "dineinPrice": 55,
+            "plateId": 86
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "title": "طاجن خضروات مع لحم",
+        "desc": "استمتع بالنكهات المريحة لطاجن الخضروات مع اللحم",
+        "imageUrl": "1757171853495-367300744.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:17:54.015Z",
+        "updatedAt": "2025-09-06T15:17:54.015Z",
+        "sizes": [
+          {
+            "id": 53,
+            "size": "R",
+            "takeawayPrice": 132,
+            "dineinPrice": 145,
+            "plateId": 42
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "title": "طاجن بامية باللحم ",
+        "desc": "استمتع بالنكهات المريحة لطاجن البامية مع اللحم",
+        "imageUrl": "1757171927527-296337731.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:19:34.348Z",
+        "updatedAt": "2025-09-06T15:19:34.348Z",
+        "sizes": [
+          {
+            "id": 54,
+            "size": "R",
+            "takeawayPrice": 132,
+            "dineinPrice": 145,
+            "plateId": 43
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "title": "طاجن خضار سادة",
+        "desc": "طاجن الخضار الشهي بدون اضافات",
+        "imageUrl": "1757172132503-875854205.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:22:53.075Z",
+        "updatedAt": "2025-09-06T15:22:53.075Z",
+        "sizes": [
+          {
+            "id": 56,
+            "size": "R",
+            "takeawayPrice": 77,
+            "dineinPrice": 85,
+            "plateId": 45
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "title": "طاجن ملوخية سادة",
+        "desc": "تذوق المذاق المخملي الغني لطاجن الملوخية الخاص بنا",
+        "imageUrl": "1757172241754-402327148.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:24:22.193Z",
+        "updatedAt": "2025-09-06T15:24:22.193Z",
+        "sizes": [
+          {
+            "id": 57,
+            "size": "R",
+            "takeawayPrice": 77,
+            "dineinPrice": 85,
+            "plateId": 46
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "title": "طاجن ملوخية باللحمة",
+        "desc": "تذوق المذاق المخملي الغني لطاجن الملوخية الخاص بنا",
+        "imageUrl": "1757172302279-132853704.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:20:54.756Z",
+        "updatedAt": "2025-09-06T15:25:04.414Z",
+        "sizes": [
+          {
+            "id": 58,
+            "size": "R",
+            "takeawayPrice": 132,
+            "dineinPrice": 145,
+            "plateId": 44
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "title": "طاجن ورق عنب بالكوارع",
+        "desc": "ورق العنب الشهى المطبوخ مع الكوارع",
+        "imageUrl": "1757172445261-126819538.webp",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:27:57.993Z",
+        "updatedAt": "2025-09-06T15:27:57.993Z",
+        "sizes": [
+          {
+            "id": 59,
+            "size": "R",
+            "takeawayPrice": 192,
+            "dineinPrice": 205,
+            "plateId": 47
+          }
+        ]
+      },
+      {
+        "id": 83,
+        "title": "طاجن ارز سادة",
+        "desc": "طاجن ارز سادة",
+        "imageUrl": "1759701443504-385717647.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:04:36.426Z",
+        "updatedAt": "2025-10-05T21:57:25.892Z",
+        "sizes": [
+          {
+            "id": 168,
+            "size": "R",
+            "takeawayPrice": 60,
+            "dineinPrice": 66,
+            "plateId": 83
+          }
+        ]
+      },
+      {
+        "id": 84,
+        "title": "طاجن بطاطس باللحمة",
+        "desc": "طاجن بطاطس باللحمة",
+        "imageUrl": "1759701980120-171427275.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:05:36.540Z",
+        "updatedAt": "2025-10-05T22:06:22.383Z",
+        "sizes": [
+          {
+            "id": 172,
+            "size": "R",
+            "takeawayPrice": 132,
+            "dineinPrice": 145,
+            "plateId": 84
+          }
+        ]
+      },
+      {
+        "id": 85,
+        "title": "طاجن كوارع",
+        "desc": "طاجن كوارع",
+        "imageUrl": "1759702040985-531563341.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:06:16.167Z",
+        "updatedAt": "2025-10-05T22:07:23.501Z",
+        "sizes": [
+          {
+            "id": 173,
+            "size": "R",
+            "takeawayPrice": 192,
+            "dineinPrice": 210,
+            "plateId": 85
+          }
+        ]
+      },
+      {
+        "id": 81,
+        "title": "طاجن ارز لحمة",
+        "desc": "طاجن ارز لحمة",
+        "imageUrl": "1759701410869-991856683.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:03:03.817Z",
+        "updatedAt": "2025-10-05T21:56:54.230Z",
+        "sizes": [
+          {
+            "id": 166,
+            "size": "R",
+            "takeawayPrice": 93,
+            "dineinPrice": 100,
+            "plateId": 81
+          }
+        ]
+      },
+      {
+        "id": 82,
+        "title": "طاجن ارز بالكبدوالكلاوي",
+        "desc": "طاجن ارز بالكبدوالكلاوي",
+        "imageUrl": "1759701425557-734734833.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:03:50.445Z",
+        "updatedAt": "2025-10-05T21:57:12.566Z",
+        "sizes": [
+          {
+            "id": 167,
+            "size": "R",
+            "takeawayPrice": 88,
+            "dineinPrice": 95,
+            "plateId": 82
+          }
+        ]
+      },
+      {
+        "id": 87,
+        "title": "طاجن بطاطس باللحمة",
+        "desc": "طاجن بطاطس باللحمة",
+        "imageUrl": "1759701744498-750599995.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:08:03.576Z",
+        "updatedAt": "2025-10-05T22:02:27.341Z",
+        "sizes": [
+          {
+            "id": 169,
+            "size": "R",
+            "takeawayPrice": 132,
+            "dineinPrice": 145,
+            "plateId": 87
+          }
+        ]
+      },
+      {
+        "id": 88,
+        "title": "ارز شعرية",
+        "desc": "طاجن ارز شعرية",
+        "imageUrl": "1759702062444-184156245.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:08:51.589Z",
+        "updatedAt": "2025-10-05T22:07:44.951Z",
+        "sizes": [
+          {
+            "id": 174,
+            "size": "R",
+            "takeawayPrice": 49,
+            "dineinPrice": 55,
+            "plateId": 88
+          }
+        ]
+      },
+      {
+        "id": 89,
+        "title": "ارز بسمتي",
+        "desc": "طاجبن ارز بسمتي",
+        "imageUrl": "1759702083144-121249642.jpg",
+        "categoryId": 5,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:09:32.702Z",
+        "updatedAt": "2025-10-05T22:08:08.072Z",
+        "sizes": [
+          {
+            "id": 175,
+            "size": "R",
+            "takeawayPrice": 66,
+            "dineinPrice": 70,
+            "plateId": 89
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "الطيور",
+    "plates": [
+      {
+        "id": 76,
+        "title": "وجبة نصف دجاج",
+        "desc": "يقدم مع أرز و سلطة",
+        "imageUrl": "1759344737649-842469849.webp",
+        "categoryId": 6,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:52:58.119Z",
+        "updatedAt": "2025-10-01T18:53:55.274Z",
+        "sizes": [
+          {
+            "id": 129,
+            "size": "R",
+            "takeawayPrice": 205,
+            "dineinPrice": 220,
+            "plateId": 76
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "title": " ورك فرخة مع سلطة وعيش",
+        "desc": " ورك فرخة مع سلطة وعيش",
+        "imageUrl": "1759344866152-430327871.webp",
+        "categoryId": 6,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:54:48.928Z",
+        "updatedAt": "2025-10-01T18:54:48.928Z",
+        "sizes": [
+          {
+            "id": 130,
+            "size": "R",
+            "takeawayPrice": 115,
+            "dineinPrice": 125,
+            "plateId": 77
+          }
+        ]
+      },
+      {
+        "id": 78,
+        "title": "جوز حمام محشي",
+        "desc": "جوز حمام محشي",
+        "imageUrl": "1759345077725-451697205.webp",
+        "categoryId": 6,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:58:06.997Z",
+        "updatedAt": "2025-10-01T18:58:06.997Z",
+        "sizes": [
+          {
+            "id": 131,
+            "size": "R",
+            "takeawayPrice": 385,
+            "dineinPrice": 425,
+            "plateId": 78
+          }
+        ]
+      },
+      {
+        "id": 80,
+        "title": "جوز سمان مشوي",
+        "desc": "جوز سمان مشوي",
+        "imageUrl": "1759345222896-757333591.webp",
+        "categoryId": 6,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T19:00:27.014Z",
+        "updatedAt": "2025-10-01T19:00:27.014Z",
+        "sizes": [
+          {
+            "id": 133,
+            "size": "R",
+            "takeawayPrice": 220,
+            "dineinPrice": 240,
+            "plateId": 80
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "title": "فرخة مشوية ",
+        "desc": "فرخة مشوية ك",
+        "imageUrl": "1759701939094-868118344.jpg",
+        "categoryId": 6,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:51:13.073Z",
+        "updatedAt": "2025-10-05T22:05:42.540Z",
+        "sizes": [
+          {
+            "id": 170,
+            "size": "S",
+            "takeawayPrice": 300,
+            "dineinPrice": 330,
+            "plateId": 75
+          },
+          {
+            "id": 171,
+            "size": "L",
+            "takeawayPrice": 330,
+            "dineinPrice": 355,
+            "plateId": 75
+          }
+        ]
+      },
+      {
+        "id": 79,
+        "title": "جوز حمام مشوي",
+        "desc": "جوز حمام مشوي",
+        "imageUrl": "1759702260933-344494429.jpg",
+        "categoryId": 6,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:59:24.948Z",
+        "updatedAt": "2025-10-05T22:11:03.292Z",
+        "sizes": [
+          {
+            "id": 177,
+            "size": "R",
+            "takeawayPrice": 295,
+            "dineinPrice": 320,
+            "plateId": 79
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "فتات",
+    "plates": [
+      {
+        "id": 52,
+        "title": "فتة شيش طاووق",
+        "desc": "قطع من الخبز والارزمع الشيش طاووق",
+        "imageUrl": "1757185565908-357736315.webp",
+        "categoryId": 7,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T19:06:41.584Z",
+        "updatedAt": "2025-10-05T22:41:33.197Z",
+        "sizes": [
+          {
+            "id": 178,
+            "size": "R",
+            "takeawayPrice": 137,
+            "dineinPrice": 150,
+            "plateId": 52
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "title": " فتة كوارع",
+        "desc": "قطع الخبز والارزمع الكوارع",
+        "imageUrl": "1757185473622-617904434.webp",
+        "categoryId": 7,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T19:05:02.112Z",
+        "updatedAt": "2025-10-05T22:41:59.375Z",
+        "sizes": [
+          {
+            "id": 179,
+            "size": "R",
+            "takeawayPrice": 210,
+            "dineinPrice": 230,
+            "plateId": 51
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "title": "فتة كفتة شامي",
+        "desc": "قطع من الخبزوالارز مع الكفته الشاميه",
+        "imageUrl": "1757185723579-585744890.webp",
+        "categoryId": 7,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T19:09:24.157Z",
+        "updatedAt": "2025-10-05T22:42:24.353Z",
+        "sizes": [
+          {
+            "id": 180,
+            "size": "R",
+            "takeawayPrice": 137,
+            "dineinPrice": 150,
+            "plateId": 54
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "title": " فتة كوارع",
+        "desc": "قطع الخبزوالارز مع الكوارع",
+        "imageUrl": "1757185473622-617904434.webp",
+        "categoryId": 7,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T19:07:51.384Z",
+        "updatedAt": "2025-10-05T22:43:17.682Z",
+        "sizes": [
+          {
+            "id": 181,
+            "size": "R",
+            "takeawayPrice": 210,
+            "dineinPrice": 230,
+            "plateId": 53
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "المكرونة",
+    "plates": [
+      {
+        "id": 49,
+        "title": "إسباجيتي لحم",
+        "desc": " إسباجيتي لحم باللحمه المفرومه",
+        "imageUrl": "1757172678469-733912953.webp",
+        "categoryId": 8,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:31:36.729Z",
+        "updatedAt": "2025-09-06T15:31:36.729Z",
+        "sizes": [
+          {
+            "id": 61,
+            "size": "R",
+            "takeawayPrice": 77,
+            "dineinPrice": 85,
+            "plateId": 49
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "title": "مكرونة فرن",
+        "desc": "طبق حيث يتم دمج المعكرونة المطبوخة مع صلصة غنية، مغطاة بالجبن، ويتم خبزها حتى تصبح ذهبية اللون",
+        "imageUrl": "1759702235312-993968464.jpg",
+        "categoryId": 8,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T15:30:40.918Z",
+        "updatedAt": "2025-10-05T22:10:38.586Z",
+        "sizes": [
+          {
+            "id": 176,
+            "size": "R",
+            "takeawayPrice": 77,
+            "dineinPrice": 85,
+            "plateId": 48
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "ساندوتشات",
+    "plates": [
+      {
+        "id": 55,
+        "title": "ساندوتش كفتة",
+        "desc": "رغيف كفتة",
+        "imageUrl": "1759341134128-911513205.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T17:53:23.314Z",
+        "updatedAt": "2025-10-01T17:53:23.314Z",
+        "sizes": [
+          {
+            "id": 86,
+            "size": "S",
+            "takeawayPrice": 36,
+            "dineinPrice": 40,
+            "plateId": 55
+          },
+          {
+            "id": 87,
+            "size": "L",
+            "takeawayPrice": 58,
+            "dineinPrice": 61,
+            "plateId": 55
+          }
+        ]
+      },
+      {
+        "id": 57,
+        "title": "ساندوتش كبده مشويه",
+        "desc": "ساندوتش كبده مشويه",
+        "imageUrl": "1759341391100-217557237.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T17:58:02.728Z",
+        "updatedAt": "2025-10-01T17:58:02.728Z",
+        "sizes": [
+          {
+            "id": 90,
+            "size": "S",
+            "takeawayPrice": 36,
+            "dineinPrice": 40,
+            "plateId": 57
+          },
+          {
+            "id": 91,
+            "size": "L",
+            "takeawayPrice": 53,
+            "dineinPrice": 61,
+            "plateId": 57
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "title": "ساندوتش كلاوي بتلو",
+        "desc": "ساندوتش كلاوي بتلو",
+        "imageUrl": "1759341680176-551377205.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:08:00.302Z",
+        "updatedAt": "2025-10-01T18:08:00.302Z",
+        "sizes": [
+          {
+            "id": 94,
+            "size": "S",
+            "takeawayPrice": 44,
+            "dineinPrice": 49,
+            "plateId": 59
+          },
+          {
+            "id": 95,
+            "size": "L",
+            "takeawayPrice": 68,
+            "dineinPrice": 72,
+            "plateId": 59
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "title": "ساندوتش كلاوي شمبري",
+        "desc": "ساندوتش كلاوي شمبري",
+        "imageUrl": "1759342181255-270608936.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:10:41.181Z",
+        "updatedAt": "2025-10-01T18:10:41.181Z",
+        "sizes": [
+          {
+            "id": 96,
+            "size": "S",
+            "takeawayPrice": 36,
+            "dineinPrice": 40,
+            "plateId": 60
+          },
+          {
+            "id": 97,
+            "size": "L",
+            "takeawayPrice": 58,
+            "dineinPrice": 61,
+            "plateId": 60
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "title": "ساندوتش كباب ضاني",
+        "desc": "ساندوتش كباب ضاني",
+        "imageUrl": "1759342309965-642807415.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:12:26.446Z",
+        "updatedAt": "2025-10-01T18:12:26.446Z",
+        "sizes": [
+          {
+            "id": 98,
+            "size": "S",
+            "takeawayPrice": 55,
+            "dineinPrice": 61,
+            "plateId": 61
+          },
+          {
+            "id": 99,
+            "size": "L",
+            "takeawayPrice": 88,
+            "dineinPrice": 94,
+            "plateId": 61
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "title": "ساندوتش كباب بتلو",
+        "desc": "ساندوتش كباب بتلو",
+        "imageUrl": "1759342385782-472215605.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:13:56.484Z",
+        "updatedAt": "2025-10-01T18:13:56.484Z",
+        "sizes": [
+          {
+            "id": 100,
+            "size": "S",
+            "takeawayPrice": 55,
+            "dineinPrice": 61,
+            "plateId": 62
+          },
+          {
+            "id": 101,
+            "size": "L",
+            "takeawayPrice": 88,
+            "dineinPrice": 94,
+            "plateId": 62
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "title": "ساندوتش حلويات بتلو",
+        "desc": "ساندوتش حلويات بتلو",
+        "imageUrl": "1759342572513-420118418.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:17:59.589Z",
+        "updatedAt": "2025-10-01T18:17:59.589Z",
+        "sizes": [
+          {
+            "id": 102,
+            "size": "S",
+            "takeawayPrice": 55,
+            "dineinPrice": 61,
+            "plateId": 63
+          },
+          {
+            "id": 103,
+            "size": "L",
+            "takeawayPrice": 88,
+            "dineinPrice": 94,
+            "plateId": 63
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "title": "رغيف قلب بتلو",
+        "desc": "رغيف قلب بتلو",
+        "imageUrl": "1759342717663-378315503.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:19:26.355Z",
+        "updatedAt": "2025-10-01T18:19:26.355Z",
+        "sizes": [
+          {
+            "id": 104,
+            "size": "S",
+            "takeawayPrice": 44,
+            "dineinPrice": 49,
+            "plateId": 64
+          },
+          {
+            "id": 105,
+            "size": "L",
+            "takeawayPrice": 77,
+            "dineinPrice": 82,
+            "plateId": 64
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "title": "رغيف سجق مشوي",
+        "desc": "رغيف سجق مشوي",
+        "imageUrl": "1759342850849-48147324.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:21:31.625Z",
+        "updatedAt": "2025-10-01T18:21:31.625Z",
+        "sizes": [
+          {
+            "id": 106,
+            "size": "S",
+            "takeawayPrice": 36,
+            "dineinPrice": 40,
+            "plateId": 65
+          },
+          {
+            "id": 107,
+            "size": "L",
+            "takeawayPrice": 58,
+            "dineinPrice": 61,
+            "plateId": 65
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "title": "رغيف لحم إنتركوت",
+        "desc": "رغيف لحم إنتركوت",
+        "imageUrl": "1759342984558-395662908.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:24:09.996Z",
+        "updatedAt": "2025-10-01T18:24:09.996Z",
+        "sizes": [
+          {
+            "id": 108,
+            "size": "S",
+            "takeawayPrice": 47,
+            "dineinPrice": 52,
+            "plateId": 66
+          },
+          {
+            "id": 109,
+            "size": "L",
+            "takeawayPrice": 69,
+            "dineinPrice": 74,
+            "plateId": 66
+          }
+        ]
+      },
+      {
+        "id": 67,
+        "title": "رغيف لحم فليتو",
+        "desc": "رغيف لحم فليتو",
+        "imageUrl": "1759343096988-767271242.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:25:30.849Z",
+        "updatedAt": "2025-10-01T18:25:30.849Z",
+        "sizes": [
+          {
+            "id": 110,
+            "size": "S",
+            "takeawayPrice": 52,
+            "dineinPrice": 56,
+            "plateId": 67
+          },
+          {
+            "id": 111,
+            "size": "L",
+            "takeawayPrice": 77,
+            "dineinPrice": 83,
+            "plateId": 67
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "title": "رغيف طرب",
+        "desc": "رغيف طرب",
+        "imageUrl": "1759343195409-755900786.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:27:04.091Z",
+        "updatedAt": "2025-10-01T18:27:04.091Z",
+        "sizes": [
+          {
+            "id": 112,
+            "size": "S",
+            "takeawayPrice": 55,
+            "dineinPrice": 61,
+            "plateId": 68
+          },
+          {
+            "id": 113,
+            "size": "L",
+            "takeawayPrice": 88,
+            "dineinPrice": 94,
+            "plateId": 68
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "title": "رغيف مخاصي",
+        "desc": "رغيف مخاصي",
+        "imageUrl": "1759343268772-339811721.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:28:24.411Z",
+        "updatedAt": "2025-10-01T18:28:24.411Z",
+        "sizes": [
+          {
+            "id": 114,
+            "size": "S",
+            "takeawayPrice": 55,
+            "dineinPrice": 61,
+            "plateId": 69
+          },
+          {
+            "id": 115,
+            "size": "L",
+            "takeawayPrice": 88,
+            "dineinPrice": 94,
+            "plateId": 69
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "title": "حواوشي لحم  مشوي على الفحم",
+        "desc": "حواوشي لحم مشوي على الفحم",
+        "imageUrl": "1759343593521-737943198.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:34:00.561Z",
+        "updatedAt": "2025-10-01T18:34:00.561Z",
+        "sizes": [
+          {
+            "id": 120,
+            "size": "S",
+            "takeawayPrice": 42,
+            "dineinPrice": 46,
+            "plateId": 72
+          },
+          {
+            "id": 121,
+            "size": "L",
+            "takeawayPrice": 75,
+            "dineinPrice": 79,
+            "plateId": 72
+          }
+        ]
+      },
+      {
+        "id": 73,
+        "title": "حواوشي سجق مشوي على الفحم",
+        "desc": "حواوشي سجق مشوي على الفحم",
+        "imageUrl": "1759343681332-512410364.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:35:31.619Z",
+        "updatedAt": "2025-10-01T18:35:31.619Z",
+        "sizes": [
+          {
+            "id": 122,
+            "size": "S",
+            "takeawayPrice": 45,
+            "dineinPrice": 50,
+            "plateId": 73
+          },
+          {
+            "id": 123,
+            "size": "L",
+            "takeawayPrice": 78,
+            "dineinPrice": 83,
+            "plateId": 73
+          }
+        ]
+      },
+      {
+        "id": 74,
+        "title": "سندوتش حلالي",
+        "desc": "سندوتش حلالي",
+        "imageUrl": "1759343771506-936695077.webp",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:36:48.023Z",
+        "updatedAt": "2025-10-01T18:36:48.023Z",
+        "sizes": [
+          {
+            "id": 124,
+            "size": "S",
+            "takeawayPrice": 38,
+            "dineinPrice": 42,
+            "plateId": 74
+          },
+          {
+            "id": 125,
+            "size": "L",
+            "takeawayPrice": 60,
+            "dineinPrice": 64,
+            "plateId": 74
+          }
+        ]
+      },
+      {
+        "id": 70,
+        "title": "رغيف مزاليكيا",
+        "desc": "رغيف مزاليكيا",
+        "imageUrl": "1759705864527-884296329.jpg",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:30:34.168Z",
+        "updatedAt": "2025-10-05T23:11:55.866Z",
+        "sizes": [
+          {
+            "id": 190,
+            "size": "S",
+            "takeawayPrice": 49,
+            "dineinPrice": 61,
+            "plateId": 70
+          },
+          {
+            "id": 191,
+            "size": "L",
+            "takeawayPrice": 82,
+            "dineinPrice": 94,
+            "plateId": 70
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "title": "ساندوتش كبدة بتلو",
+        "desc": "ساندوتش كبدة بتلو",
+        "imageUrl": "1759704566674-329322448.jpg",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T17:59:41.130Z",
+        "updatedAt": "2025-10-05T22:49:38.782Z",
+        "sizes": [
+          {
+            "id": 184,
+            "size": "S",
+            "takeawayPrice": 44,
+            "dineinPrice": 49,
+            "plateId": 58
+          },
+          {
+            "id": 185,
+            "size": "L",
+            "takeawayPrice": 68,
+            "dineinPrice": 72,
+            "plateId": 58
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "title": "رغيف مزاليكيا",
+        "desc": "رغيف مزاليكيا",
+        "imageUrl": "1759704650082-765132599.jpg",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T18:31:52.617Z",
+        "updatedAt": "2025-10-05T22:50:52.902Z",
+        "sizes": [
+          {
+            "id": 186,
+            "size": "S",
+            "takeawayPrice": 49,
+            "dineinPrice": 61,
+            "plateId": 71
+          },
+          {
+            "id": 187,
+            "size": "L",
+            "takeawayPrice": 82,
+            "dineinPrice": 94,
+            "plateId": 71
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "title": "ساندوتش كبدة مقلية",
+        "desc": "ساندوتش كبدة مقلية",
+        "imageUrl": "1759704756200-387717838.jpg",
+        "categoryId": 9,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-01T17:55:40.462Z",
+        "updatedAt": "2025-10-05T22:52:40.706Z",
+        "sizes": [
+          {
+            "id": 188,
+            "size": "S",
+            "takeawayPrice": 53,
+            "dineinPrice": 31,
+            "plateId": 56
+          },
+          {
+            "id": 189,
+            "size": "L",
+            "takeawayPrice": 53,
+            "dineinPrice": 31,
+            "plateId": 56
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "ساندوتشات التوفير ",
+    "plates": [
+      {
+        "id": 99,
+        "title": "عرض الزعيم",
+        "desc": "ساندوتش كفته كبير + ساندوتش لحمه كبير + ساندوتش سجق مشوي صغير + ساندوتش كبده مشوي صغير",
+        "imageUrl": "1759590301613-643371118.webp",
+        "categoryId": 10,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T15:05:12.188Z",
+        "updatedAt": "2025-10-04T15:05:12.188Z",
+        "sizes": [
+          {
+            "id": 156,
+            "size": "R",
+            "takeawayPrice": 190,
+            "dineinPrice": 210,
+            "plateId": 99
+          }
+        ]
+      },
+      {
+        "id": 100,
+        "title": " عرض الاسطوره",
+        "desc": "ساندوتش مخاصي كبير + ساندوتش قلوب كبير + ساندوتش شيش صغير + ساندوتش كلاوي صغير",
+        "imageUrl": "1759590332444-498595774.webp",
+        "categoryId": 10,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T15:05:43.179Z",
+        "updatedAt": "2025-10-04T15:05:43.179Z",
+        "sizes": [
+          {
+            "id": 157,
+            "size": "R",
+            "takeawayPrice": 190,
+            "dineinPrice": 210,
+            "plateId": 100
+          }
+        ]
+      },
+      {
+        "id": 101,
+        "title": "عرض الحاتي",
+        "desc": "حواوشي لحمه كبير + ساندوتش بانيه كبير + حواوشي سجق صغير + ساندوتش كريسبي صغير",
+        "imageUrl": "1759590364858-596576603.webp",
+        "categoryId": 10,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T15:06:14.469Z",
+        "updatedAt": "2025-10-04T15:06:14.469Z",
+        "sizes": [
+          {
+            "id": 158,
+            "size": "R",
+            "takeawayPrice": 165,
+            "dineinPrice": 182,
+            "plateId": 101
+          }
+        ]
+      },
+      {
+        "id": 98,
+        "title": "عرض الرايق",
+        "desc": "ساندوتش كبده مقلي كبير + ساندوتش مخ سوتيه كبير + ساندوتش سجق مقلي صغير + ساندوتش روزبيف صغير",
+        "imageUrl": "1759590259374-648066616.webp",
+        "categoryId": 10,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T15:04:42.805Z",
+        "updatedAt": "2025-10-05T23:13:29.538Z",
+        "sizes": [
+          {
+            "id": 155,
+            "size": "R",
+            "takeawayPrice": 165,
+            "dineinPrice": 182,
+            "plateId": 98
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "وجبات التوفير",
+    "plates": [
+      {
+        "id": 94,
+        "title": "عرض 1",
+        "desc": "2 قطعة كفتة2+2 قطعة سجق + شريحة لحمة + أرز بسمتي + ثومية + بطاطس + مخلل22222222",
+        "imageUrl": "1759589762002-419256789.webp",
+        "categoryId": 11,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T14:56:27.355Z",
+        "updatedAt": "2025-10-05T23:16:53.537Z",
+        "sizes": [
+          {
+            "id": 859,
+            "size": "R",
+            "takeawayPrice": 140,
+            "dineinPrice": 140,
+            "plateId": 94
+          }
+        ]
+      },
+      {
+        "id": 97,
+        "title": " عرض 2",
+        "desc": "2 قطعة كفتة2 + قطعة بانية + 3شريحة قلوب+ أرز بسمتي + ثومية + بطاطس + مخلل2",
+        "imageUrl": "1759589816025-293387328.webp",
+        "categoryId": 11,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T14:59:54.322Z",
+        "updatedAt": "2025-10-05T23:18:53.591Z",
+        "sizes": [
+          {
+            "id": 860,
+            "size": "R",
+            "takeawayPrice": 160,
+            "dineinPrice": 160,
+            "plateId": 97
+          }
+        ]
+      },
+      {
+        "id": 96,
+        "title": "عرض 1",
+        "desc": " قطعة كفتة2+2 قطعة سجق + شريحة لحمة + أرز بسمتي + ثومية2",
+        "imageUrl": "1759589762002-419256789.webp",
+        "categoryId": 11,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T14:59:00.045Z",
+        "updatedAt": "2025-10-05T23:22:41.585Z",
+        "sizes": [
+          {
+            "id": 861,
+            "size": "R",
+            "takeawayPrice": 140,
+            "dineinPrice": 140,
+            "plateId": 96
+          }
+        ]
+      },
+      {
+        "id": 95,
+        "title": " عرض 2",
+        "desc": "2 قطعة كفتة2 + قطعة بانية + 3شريحة قلوب + أرز بسمتي + ثومية + بطاطس + مخلل",
+        "imageUrl": "1759589816025-293387328.webp",
+        "categoryId": 11,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-10-04T14:57:18.053Z",
+        "updatedAt": "2025-10-07T10:50:07.359Z",
+        "sizes": [
+          {
+            "id": 862,
+            "size": "R",
+            "takeawayPrice": 160,
+            "dineinPrice": 160,
+            "plateId": 95
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "سلطة",
+    "plates": [
+      {
+        "id": 36,
+        "title": "سلطة كول سلو",
+        "desc": "مصنوعة من الملفوف الطازج المبشور، الممزوج بصلصة المايونيز المنعشة.",
+        "imageUrl": "1757164124702-790268950.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T13:10:03.894Z",
+        "updatedAt": "2025-09-06T18:54:54.485Z",
+        "sizes": [
+          {
+            "id": 863,
+            "size": "R",
+            "takeawayPrice": 20,
+            "dineinPrice": 20,
+            "plateId": 36
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "title": "سلطة طحينة",
+        "desc": "مصنوع من مزيج من الخضار ومعجون السمسم، وهو مزيج مثالي من النكهات والقوام، مثالي للاستمتاع به كطبق جانبي.",
+        "imageUrl": "1757162800862-198924995.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T12:47:38.409Z",
+        "updatedAt": "2025-09-06T18:53:22.444Z",
+        "sizes": [
+          {
+            "id": 864,
+            "size": "R",
+            "takeawayPrice": 15,
+            "dineinPrice": 15,
+            "plateId": 31
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "title": "سلطة بابا غنوج ",
+        "desc": "مصنوع من الباذنجان المطبوخ والمهروس، ممزوج بالخضار، مثالي كطبق جانبي.",
+        "imageUrl": "1757163678601-361861990.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T13:01:59.003Z",
+        "updatedAt": "2025-09-06T18:53:31.607Z",
+        "sizes": [
+          {
+            "id": 865,
+            "size": "R",
+            "takeawayPrice": 15,
+            "dineinPrice": 15,
+            "plateId": 32
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "title": "ثومية",
+        "desc": "صلصة مثالية للبطاطس المقلية أو الخضار أو كطبق جانبي مع أي وجبة.",
+        "imageUrl": "1757163776590-168275746.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T13:03:37.712Z",
+        "updatedAt": "2025-09-06T18:53:42.159Z",
+        "sizes": [
+          {
+            "id": 866,
+            "size": "R",
+            "takeawayPrice": 15,
+            "dineinPrice": 15,
+            "plateId": 33
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "title": "سلطة بطاطس كاري",
+        "desc": "سلطة بطاطس",
+        "imageUrl": "1757163913485-438164118.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T13:06:50.454Z",
+        "updatedAt": "2025-09-06T18:53:51.241Z",
+        "sizes": [
+          {
+            "id": 867,
+            "size": "R",
+            "takeawayPrice": 15,
+            "dineinPrice": 15,
+            "plateId": 34
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "title": "سلطة خضراء",
+        "desc": "السلطة الخضراء عبارة عن طبق مصنوع من الخضار الورقية الطازجة والمغطاة بالصلصة.",
+        "imageUrl": "1757164064182-792723724.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T13:08:08.418Z",
+        "updatedAt": "2025-09-06T18:53:58.842Z",
+        "sizes": [
+          {
+            "id": 868,
+            "size": "R",
+            "takeawayPrice": 15,
+            "dineinPrice": 15,
+            "plateId": 35
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "title": "مسقعة",
+        "desc": "طبق شرق أوسطي تقليدي، يجمع بين مزيج من الخضار والأعشاب والتوابل، مما يخلق يخنة غنية وعطرية.",
+        "imageUrl": "1757164372275-254254581.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T13:13:35.510Z",
+        "updatedAt": "2025-09-06T18:54:11.730Z",
+        "sizes": [
+          {
+            "id": 869,
+            "size": "R",
+            "takeawayPrice": 25,
+            "dineinPrice": 25,
+            "plateId": 38
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "title": "مخلل",
+        "desc": "أضف بعض الحيوية إلى وجباتك مع المخللات المصنوعة يدوياً والمتبلة بمزيج من التوابل.",
+        "imageUrl": "1757167801408-463181585.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T14:10:27.559Z",
+        "updatedAt": "2025-09-06T18:54:21.280Z",
+        "sizes": [
+          {
+            "id": 870,
+            "size": "R",
+            "takeawayPrice": 10,
+            "dineinPrice": 10,
+            "plateId": 39
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "title": "سلطة رنجة",
+        "desc": "شرائح سمك الرنجة الطرية، ممزوجة بالخضار الطازجة، والبصل المنعش، والصلصة اللذيذة.",
+        "imageUrl": "1757164254383-532353703.webp",
+        "categoryId": 13,
+        "status": true,
+        "bestSale": false,
+        "createdAt": "2025-09-06T13:12:20.501Z",
+        "updatedAt": "2025-09-06T18:54:46.451Z",
+        "sizes": [
+          {
+            "id": 871,
+            "size": "R",
+            "takeawayPrice": 25,
+            "dineinPrice": 25,
+            "plateId": 37
+          }
+        ]
+      }
+    ]
+  }
+]

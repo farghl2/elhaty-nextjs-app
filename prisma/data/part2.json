@@ -1,0 +1,308 @@
+[
+    {
+        "id": 2,
+        "name": "الشوربة",
+        "plates": [
+            {
+                "id": 24,
+                "title": "شوربة لسان عصفور",
+                "desc": "قم بتدفئة روحك وإثارة ذوقك مع كل رشفة من حساء لسان العصفور المريح، المصنوع من معكرونة لسان العصفور الطرية والمرق اللذيذ للحصول على وجبة مرضية ولذيذة",
+                "imageUrl": "1757161883123-540947625.webp",
+                "categoryId": 2,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:32:04.858Z",
+                "updatedAt": "2025-09-06T12:32:04.858Z",
+                "sizes": [ { "id": 29, "size": "R", "takeawayPrice": 66, "dineinPrice": 73, "plateId": 24 } ]
+            },
+            {
+                "id": 25,
+                "title": "شوربة كريمة",
+                "desc": "حساء ناعم ومخملي مصنوع من المرق والخضروات والكريمة",
+                "imageUrl": "1757162020185-409110354.webp",
+                "categoryId": 2,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:34:01.445Z",
+                "updatedAt": "2025-09-06T12:34:01.445Z",
+                "sizes": [ { "id": 30, "size": "R", "takeawayPrice": 88, "dineinPrice": 97, "plateId": 25 } ]
+            },
+            {
+                "id": 26,
+                "title": "شوربة كوارع",
+                "desc": "انغمس في حساء الكوارع، وهو مرق لذيذ ولذيذ مملوء باللحوم الطرية والأعشاب العطرية ومزيج من الخضار، مما يوفر وعاء يبعث على الدفء والرضا.",
+                "imageUrl": "1757162075315-650042208.webp",
+                "categoryId": 2,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:34:51.170Z",
+                "updatedAt": "2025-09-06T12:34:51.170Z",
+                "sizes": [ { "id": 31, "size": "R", "takeawayPrice": 120, "dineinPrice": 135, "plateId": 26 } ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "محاشي",
+        "plates": [
+            {
+                "id": 27,
+                "title": "محاشي خضار مشكل",
+                "desc": "محاشي فلفل كوسه بذنجان",
+                "imageUrl": "1757162293339-958726911.webp",
+                "categoryId": 3,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:38:37.919Z",
+                "updatedAt": "2025-09-06T12:38:37.919Z",
+                "sizes": [ { "id": 32, "size": "R", "takeawayPrice": 310, "dineinPrice": 330, "plateId": 27 } ]
+            },
+            {
+                "id": 28,
+                "title": "محشي ورق عنب 1كجم",
+                "desc": "ورق عنب محشي ارز",
+                "imageUrl": "1757162417548-297155991.webp",
+                "categoryId": 3,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:40:54.880Z",
+                "updatedAt": "2025-09-06T12:40:54.880Z",
+                "sizes": [ { "id": 33, "size": "R", "takeawayPrice": 330, "dineinPrice": 363, "plateId": 28 } ]
+            },
+            {
+                "id": 29,
+                "title": "ممبار 1كجم",
+                "desc": "امعاء محشوه ارز وتوابل",
+                "imageUrl": "1757162489833-941268121.webp",
+                "categoryId": 3,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:41:44.474Z",
+                "updatedAt": "2025-09-06T12:41:44.474Z",
+                "sizes": [ { "id": 34, "size": "R", "takeawayPrice": 330, "dineinPrice": 363, "plateId": 29 } ]
+            },
+            {
+                "id": 30,
+                "title": " طبق سمبوسك لحمه",
+                "desc": " طبق سمبوسك لحمه باللحمه المفرومه",
+                "imageUrl": "1757162599759-49179875.webp",
+                "categoryId": 3,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T12:43:37.482Z",
+                "updatedAt": "2025-09-06T12:43:37.482Z",
+                "sizes": [ { "id": 35, "size": "R", "takeawayPrice": 160, "dineinPrice": 175, "plateId": 30 } ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "الطواجن",
+        "plates": [
+            {
+                "id": 40,
+                "title": " طاجن عكاوي",
+                "desc": "طبق لذيذ يحتوي على لحم ذيل الثور الطري المطبوخ ببطء مع التوابل",
+                "imageUrl": "1757171667825-677418781.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:15:06.071Z",
+                "updatedAt": "2025-09-06T15:15:06.071Z",
+                "sizes": [ { "id": 51, "size": "R", "takeawayPrice": 143, "dineinPrice": 155, "plateId": 40 } ]
+            },
+            {
+                "id": 41,
+                "title": " طاجن حلالي",
+                "desc": "الاكله الشعبيه المليئه بالطاقه",
+                "imageUrl": "1757171738066-20589575.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:16:05.598Z",
+                "updatedAt": "2025-09-06T15:16:05.598Z",
+                "sizes": [ { "id": 52, "size": "R", "takeawayPrice": 143, "dineinPrice": 155, "plateId": 41 } ]
+            },
+            {
+                "id": 86,
+                "title": "مكرونة مبكبكة",
+                "desc": "طاجن مكرونة مكبكبة",
+                "imageUrl": "1759701170591-245111070.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:07:20.386Z",
+                "updatedAt": "2025-10-05T21:52:53.676Z",
+                "sizes": [ { "id": 165, "size": "R", "takeawayPrice": 45, "dineinPrice": 55, "plateId": 86 } ]
+            },
+            {
+                "id": 42,
+                "title": "طاجن خضروات مع لحم",
+                "desc": "استمتع بالنكهات المريحة لطاجن الخضروات مع اللحم",
+                "imageUrl": "1757171853495-367300744.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:17:54.015Z",
+                "updatedAt": "2025-09-06T15:17:54.015Z",
+                "sizes": [ { "id": 53, "size": "R", "takeawayPrice": 132, "dineinPrice": 145, "plateId": 42 } ]
+            },
+            {
+                "id": 43,
+                "title": "طاجن بامية باللحم ",
+                "desc": "استمتع بالنكهات المريحة لطاجن البامية مع اللحم",
+                "imageUrl": "1757171927527-296337731.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:19:34.348Z",
+                "updatedAt": "2025-09-06T15:19:34.348Z",
+                "sizes": [ { "id": 54, "size": "R", "takeawayPrice": 132, "dineinPrice": 145, "plateId": 43 } ]
+            },
+            {
+                "id": 45,
+                "title": "طاجن خضار سادة",
+                "desc": "طاجن الخضار الشهي بدون اضافات",
+                "imageUrl": "1757172132503-875854205.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:22:53.075Z",
+                "updatedAt": "2025-09-06T15:22:53.075Z",
+                "sizes": [ { "id": 56, "size": "R", "takeawayPrice": 77, "dineinPrice": 85, "plateId": 45 } ]
+            },
+            {
+                "id": 46,
+                "title": "طاجن ملوخية سادة",
+                "desc": "تذوق المذاق المخملي الغني لطاجن الملوخية الخاص بنا",
+                "imageUrl": "1757172241754-402327148.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:24:22.193Z",
+                "updatedAt": "2025-09-06T15:24:22.193Z",
+                "sizes": [ { "id": 57, "size": "R", "takeawayPrice": 77, "dineinPrice": 85, "plateId": 46 } ]
+            },
+            {
+                "id": 44,
+                "title": "طاجن ملوخية باللحمة",
+                "desc": "تذوق المذاق المخملي الغني لطاجن الملوخية الخاص بنا",
+                "imageUrl": "1757172302279-132853704.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:20:54.756Z",
+                "updatedAt": "2025-09-06T15:25:04.414Z",
+                "sizes": [ { "id": 58, "size": "R", "takeawayPrice": 132, "dineinPrice": 145, "plateId": 44 } ]
+            },
+            {
+                "id": 47,
+                "title": "طاجن ورق عنب بالكوارع",
+                "desc": "ورق العنب الشهى المطبوخ مع الكوارع",
+                "imageUrl": "1757172445261-126819538.webp",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-09-06T15:27:57.993Z",
+                "updatedAt": "2025-09-06T15:27:57.993Z",
+                "sizes": [ { "id": 59, "size": "R", "takeawayPrice": 192, "dineinPrice": 205, "plateId": 47 } ]
+            },
+            {
+                "id": 83,
+                "title": "طاجن ارز سادة",
+                "desc": "طاجن ارز سادة",
+                "imageUrl": "1759701443504-385717647.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:04:36.426Z",
+                "updatedAt": "2025-10-05T21:57:25.892Z",
+                "sizes": [ { "id": 168, "size": "R", "takeawayPrice": 60, "dineinPrice": 66, "plateId": 83 } ]
+            },
+            {
+                "id": 84,
+                "title": "طاجن بطاطس باللحمة",
+                "desc": "طاجن بطاطس باللحمة",
+                "imageUrl": "1759701980120-171427275.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:05:36.540Z",
+                "updatedAt": "2025-10-05T22:06:22.383Z",
+                "sizes": [ { "id": 172, "size": "R", "takeawayPrice": 132, "dineinPrice": 145, "plateId": 84 } ]
+            },
+            {
+                "id": 85,
+                "title": "طاجن كوارع",
+                "desc": "طاجن كوارع",
+                "imageUrl": "1759702040985-531563341.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:06:16.167Z",
+                "updatedAt": "2025-10-05T22:07:23.501Z",
+                "sizes": [ { "id": 173, "size": "R", "takeawayPrice": 192, "dineinPrice": 210, "plateId": 85 } ]
+            },
+            {
+                "id": 81,
+                "title": "طاجن ارز لحمة",
+                "desc": "طاجن ارز لحمة",
+                "imageUrl": "1759701410869-991856683.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:03:03.817Z",
+                "updatedAt": "2025-10-05T21:56:54.230Z",
+                "sizes": [ { "id": 166, "size": "R", "takeawayPrice": 93, "dineinPrice": 100, "plateId": 81 } ]
+            },
+            {
+                "id": 82,
+                "title": "طاجن ارز بالكبدوالكلاوي",
+                "desc": "طاجن ارز بالكبدوالكلاوي",
+                "imageUrl": "1759701425557-734734833.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:03:50.445Z",
+                "updatedAt": "2025-10-05T21:57:12.566Z",
+                "sizes": [ { "id": 167, "size": "R", "takeawayPrice": 88, "dineinPrice": 95, "plateId": 82 } ]
+            },
+            {
+                "id": 87,
+                "title": "طاجن بطاطس باللحمة",
+                "desc": "طاجن بطاطس باللحمة",
+                "imageUrl": "1759701744498-750599995.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:08:03.576Z",
+                "updatedAt": "2025-10-05T22:02:27.341Z",
+                "sizes": [ { "id": 169, "size": "R", "takeawayPrice": 132, "dineinPrice": 145, "plateId": 87 } ]
+            },
+            {
+                "id": 88,
+                "title": "ارز شعرية",
+                "desc": "طاجن ارز شعرية",
+                "imageUrl": "1759702062444-184156245.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:08:51.589Z",
+                "updatedAt": "2025-10-05T22:07:44.951Z",
+                "sizes": [ { "id": 174, "size": "R", "takeawayPrice": 49, "dineinPrice": 55, "plateId": 88 } ]
+            },
+            {
+                "id": 89,
+                "title": "ارز بسمتي",
+                "desc": "طاجبن ارز بسمتي",
+                "imageUrl": "1759702083144-121249642.jpg",
+                "categoryId": 5,
+                "status": true,
+                "bestSale": false,
+                "createdAt": "2025-10-01T19:09:32.702Z",
+                "updatedAt": "2025-10-05T22:08:08.072Z",
+                "sizes": [ { "id": 175, "size": "R", "takeawayPrice": 66, "dineinPrice": 70, "plateId": 89 } ]
+            }
+        ]
+    }
+]

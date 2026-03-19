@@ -1,0 +1,50 @@
+[
+    {
+        "id": 4,
+        "title": " صينية الحبايب",
+        "desc": "محتويتها 2فرد حمام 2شوربة حمام 2ارز خلطة محاشي 1/4 محاشي + سمبوسك + سلطة + عيش",
+        "imageUrl": "1759589683846-407222432.webp",
+        "status": true,
+        "bestSale": false,
+        "takeawayPrice": 850,
+        "takeawayOffer": 0,
+        "dineinPrice": 950,
+        "dineinOffer": 0
+    },
+    {
+        "id": 3,
+        "title": "صينية العتاولة ",
+        "desc": "فرخة ونص +1/3 كفتة + 1/3 ريش+1/3 كباب + 1/3 طرب +2ملوخية+1/3محاشي + ارز 6 شوربة لسان + سلطة + عيش",
+        "imageUrl": "1759589513042-851098985.webp",
+        "status": true,
+        "bestSale": false,
+        "takeawayPrice": 2300,
+        "takeawayOffer": 0,
+        "dineinPrice": 2450,
+        "dineinOffer": 0
+    },
+    {
+        "id": 2,
+        "title": "صينية المعلم",
+        "desc": "فرخة + 1/4 كفتة + 1/4 سجق + 1/4 لحمة + 1/4 طرب + ملوخية + 1/2 محاشي مشكل + 4 شوربة لسان عصفور (ارز + سلطات + عيش)",
+        "imageUrl": "1759588901458-910750564.webp",
+        "status": true,
+        "bestSale": false,
+        "takeawayPrice": 1490,
+        "takeawayOffer": 0,
+        "dineinPrice": 1650,
+        "dineinOffer": 0
+    },
+    {
+        "id": 1,
+        "title": "صينية الحاتي",
+        "desc": "1/2 فرخة + 1/4 كفتة + 1/4 ريش + 1/4 محاشي مشكل + 2 شوربة لسان عصفور ( ارز - سلطات - عيش ",
+        "imageUrl": "1759588816486-943778767.webp",
+        "status": true,
+        "bestSale": true,
+        "takeawayPrice": 660,
+        "takeawayOffer": 0,
+        "dineinPrice": 725,
+        "dineinOffer": 0
+    }
+]
