@@ -19,7 +19,8 @@ import { Card } from "@/components/ui/card"
 const Menu = () => {
     const { data,isPending}= useQuery({
       queryKey:['get-plates'],
-      queryFn:getPlates
+      queryFn:getPlates,
+      staleTime:1000*60*60*24
     })
 
     if(isPending) return(
@@ -82,7 +83,8 @@ export default Menu
 const Catigories = () => {
   const {data, isPending} =useQuery({
     queryKey:['get-catigories'],
-    queryFn:getCategories
+    queryFn:getCategories,
+    staleTime:1000*60*60*24 
   })
   if(isPending) return(
     <div className="flex  flex-row-reverse items-center gap-2 sm:gap-4 my-4 sm:my-8 overflow-x-auto w-full  sm:w-11/12 max-w-6xl mx-auto">

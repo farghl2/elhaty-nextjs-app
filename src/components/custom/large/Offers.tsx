@@ -11,7 +11,8 @@ import { Skeleton } from "../atoms/Skeleton"
 const Offers = () => {
   const {data,isPending} = useQuery({
     queryKey:['get-offer'],
-    queryFn:getOfferPlates
+    queryFn:getOfferPlates,
+    staleTime:1000*60*60*24 
   })
 
   if(isPending) return(
